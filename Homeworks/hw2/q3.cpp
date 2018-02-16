@@ -44,5 +44,6 @@ int main() {
                 cout << "Next #: " << curr->m_data << endl;
                 delete curr;
     }
+            delete head;
     return 0;
 }

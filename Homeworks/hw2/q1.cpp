@@ -11,7 +11,6 @@ int binarySearch(int * myNums, int cnt,int value) {
     // minIndex  the lower bound of the array to check
     // maxIndex the upper bound of the array to check
     // curValue the value at the current position in array
-    cout << cnt << endl;
     for (int minIndex=0,maxIndex=cnt,curValue=myNums[pos];curValue!=value;pos=minIndex+(maxIndex-minIndex)/2,curValue=myNums[pos]) {
         if (minIndex==maxIndex || ((pos == minIndex) && (minIndex == maxIndex-1)))
             return -1;

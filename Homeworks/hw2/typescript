@@ -1,72 +1,64 @@
-Script started on Thu 15 Feb 2018 10:26:30 PM EST
-[uu3@linux1 hw2]valgrind q1;valgrind q2; vl[Kalgrind q3
-==27588== Memcheck, a memory error detector
-==27588== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
-==27588== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
-==27588== Command: q1
-==27588== 
+Script started on Thu 15 Feb 2018 10:37:32 PM EST
+[uu3@linux1 hw2]valgrind q1;valgrind q2;valgrind q3
+==28800== Memcheck, a memory error detector
+==28800== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==28800== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==28800== Command: q1
+==28800== 
 Enter numbers from smallest to largest, 0 to stop
 2 3 16 62 134 139 141 150 156 181 191 204 215 219 228 229 243 247 256 262 269 282 297 308 319 323 341 344 349 366 368 372 374 377 386 393 435 438 443 447 453 471 499 502 506 512 513 523 531 540 548 568 571 580 597 601 604 605 609 621 628 643 647 664 669 680 681 682 688 692 696 698 716 733 762 766 768 782 794 797 801 802 827 850 854 855 887 907 936 0
-Enter number to search for: 1
-binarySearch reported -1
-Enter number to search for: 2
+Enter number to search for: 1 2   2
 binarySearch reported 0
 Enter number to search for: 3
 binarySearch reported 1
+Enter number to search for: -1
+binarySearch reported -1
 Enter number to search for: 4
 binarySearch reported -1
 Enter number to search for: 16
 binarySearch reported 2
 Enter number to search for: 0
-==27588== 
-==27588== HEAP SUMMARY:
-==27588==     in use at exit: 0 bytes in 0 blocks
-==27588==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==27588== 
-==27588== All heap blocks were freed -- no leaks are possible
-==27588== 
-==27588== For counts of detected and suppressed errors, rerun with: -v
-==27588== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
-==27593== Memcheck, a memory error detector
-==27593== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
-==27593== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
-==27593== Command: q2
-==27593== 
+==28800== 
+==28800== HEAP SUMMARY:
+==28800==     in use at exit: 0 bytes in 0 blocks
+==28800==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==28800== 
+==28800== All heap blocks were freed -- no leaks are possible
+==28800== 
+==28800== For counts of detected and suppressed errors, rerun with: -v
+==28800== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+==28815== Memcheck, a memory error detector
+==28815== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==28815== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==28815== Command: q2
+==28815== 
 Enter numbers from smallest to largest, 0 to stop
-1 2 3 16 62 134 139 141 150 156 181 191 204 215 219 228 229 243 247 256 262 269 282 297 308 319 323 341 344 349 366 368 372 374 377 386 393 435 438 443 447 453 471 499 502 506 512 513 523 531 540 548 568 571 580 597 601 604 605 609 621 628 643 647 664 669 680 681 682 688 692 696 698 716 733 762 766 768 782 794 797 801 802 827 850 854 855 887 907 936 0
-Enter number to search for: 2
-binarySearch reported 0
-Enter number to search for: 3
-binarySearch reported 1
-Enter number to search for: 16
-binarySearch reported 2
-Enter number to search for: 3
-binarySearch reported 1
-Enter number to search for: 4
+2 3 16 62 134 139 141 150 156 181 191 204 215 219 228 229 243 247 256 262 269 282 297 308 319 323 341 344 349 366 368 372 374 377 386 393 435 438 443 447 453 471 499 502 506 512 513 523 531 540 548 568 571 580 597 601 604 605 609 621 628 643 647 664 669 680 681 682 688 692 696 698 716 733 762 766 768 782 794 797 801 802 827 850 854 855 887 907 936 0
+Enter number to search for: 907
+binarySearch reported 87
+Enter number to search for: 0 0 908
 binarySearch reported -1
-Enter number to search for: 5
+Enter number to search for: 9090 
 binarySearch reported -1
-Enter number to search for: 6
-binarySearch reported -1
-Enter number to search for: - -1
-binarySearch reported -1
-Enter number to search for: 983
+Enter number to search for: 936
+binarySearch reported 88
+Enter number to search for: 937
 binarySearch reported -1
 Enter number to search for: 0
-==27593== 
-==27593== HEAP SUMMARY:
-==27593==     in use at exit: 0 bytes in 0 blocks
-==27593==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==27593== 
-==27593== All heap blocks were freed -- no leaks are possible
-==27593== 
-==27593== For counts of detected and suppressed errors, rerun with: -v
-==27593== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
-==27603== Memcheck, a memory error detector
-==27603== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
-==27603== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
-==27603== Command: q3
-==27603== 
+==28815== 
+==28815== HEAP SUMMARY:
+==28815==     in use at exit: 0 bytes in 0 blocks
+==28815==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==28815== 
+==28815== All heap blocks were freed -- no leaks are possible
+==28815== 
+==28815== For counts of detected and suppressed errors, rerun with: -v
+==28815== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+==28829== Memcheck, a memory error detector
+==28829== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==28829== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==28829== Command: q3
+==28829== 
 
 Enter a number (0 to stop): 2 3 16 62 134 139 141 150 156 181 191 204 215 219 228 229 243 247 256 262 269 282 297 308 319 323 341 344 349 366 368 372 374 377 386 393 435 438 443 447 453 471 499 502 506 512 513 523 531 540 548 568 571 580 597 601 604 605 609 621 628 643 647 664 669 680 681 682 688 692 696 698 716 733 762 766 768 782 794 797 801 802 827 850 854 855 887 907 936 0
 
@@ -247,22 +239,16 @@ Next #: 855
 Next #: 887
 Next #: 907
 Next #: 936
-==27603== 
-==27603== HEAP SUMMARY:
-==27603==     in use at exit: 16 bytes in 1 blocks
-==27603==   total heap usage: 90 allocs, 89 frees, 1,440 bytes allocated
-==27603== 
-==27603== LEAK SUMMARY:
-==27603==    definitely lost: 16 bytes in 1 blocks
-==27603==    indirectly lost: 0 bytes in 0 blocks
-==27603==      possibly lost: 0 bytes in 0 blocks
-==27603==    still reachable: 0 bytes in 0 blocks
-==27603==         suppressed: 0 bytes in 0 blocks
-==27603== Rerun with --leak-check=full to see details of leaked memory
-==27603== 
-==27603== For counts of detected and suppressed errors, rerun with: -v
-==27603== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+==28829== 
+==28829== HEAP SUMMARY:
+==28829==     in use at exit: 0 bytes in 0 blocks
+==28829==   total heap usage: 89 allocs, 89 frees, 1,424 bytes allocated
+==28829== 
+==28829== All heap blocks were freed -- no leaks are possible
+==28829== 
+==28829== For counts of detected and suppressed errors, rerun with: -v
+==28829== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
 [uu3@linux1 hw2]exit
 exit
 
-Script done on Thu 15 Feb 2018 10:27:43 PM EST
+Script done on Thu 15 Feb 2018 10:38:38 PM EST

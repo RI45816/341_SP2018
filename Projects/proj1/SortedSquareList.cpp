@@ -6,10 +6,9 @@
 
 /*****************************************
  ** File:    SortedSquareList.cpp
- ** Project: CMSC 202 proj1, Fall 2017
+ ** Project: CMSC 341 proj1, Spring 2018
  ** Author:  Uzoma Uwanamodo
  ** Date:    02/26/2018
- ** Section: 02
  ** E-mail:  uu3@umbc.edu
  ** 
  ** This file contains the definition for the SortedSquareList class.
@@ -35,7 +34,7 @@ SortedSquareList::SortedSquareList()
 
 /*
  *  Method: SortedSquareList::SortedSquareList()
- *   Descr: 
+ *   Descr: Copy constructor for SortedSquareList
  */
 SortedSquareList::SortedSquareList(const SortedSquareList &other)
 {

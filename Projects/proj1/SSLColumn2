@@ -1,0 +1,217 @@
+/***********************************************************************
+ * AUTHOR: U-DESKTOP-ANLHPM1\amozu <amozu>
+ *   FILE: .//SSLColumn.cpp
+ *   DATE: Fri Feb 23 12:52:56 2018
+ *  DESCR: 
+ ***********************************************************************/
+#include "SSLColumn.h"
+#include <stdexcept>
+
+/*
+ *  Method: SSLColumn::SSLColumn()
+ *   Descr: Initialize SSLColumn and create circular buffer array
+ */
+SSLColumn::SSLColumn(int n) : m_capacity(n), m_size(0), m_start(0), m_end(0)
+{
+    m_data = new int[m_capacity];
+    
+}
+
+
+/*
+ *  Method: SSLColumn::SSLColumn()
+ *   Descr: 
+ */
+SSLColumn::SSLColumn(const SSLColumn &other)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::~SSLColumn()
+ *   Descr: 
+ */
+SSLColumn::~SSLColumn()
+{
+}
+
+
+/*
+ *  Method: SSLColumn::operator=()
+ *   Descr: 
+ */
+const SSLColumn & SSLColumn::operator=(const SSLColumn &rhs)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::add()
+ *   Descr: 
+ */
+void SSLColumn::add(int data) {
+    if (m_size == m_capacity)
+        throw std::overflow_error("The array is full");
+
+    int insertIndex = findNearest(data); // Find the point of insertion for the array
+    if (insertIndex == 0)
+        addFirst(data);
+    else if (insertIndex == m_capacity - 1)
+        addLast(data);
+    else {
+        for (int i = m_size; i > insertIndex; i--)
+            m_data[bufferIndex(i)] = findAt(i - 1);
+        m_data[bufferIndex(insertIndex)] = data;
+        m_end = (m_end + 1) % m_capacity;
+        m_size++;
+    }
+}
+
+
+/*
+ *  Method: SSLColumn::addFirst()
+ *   Descr: 
+ */
+void SSLColumn::addFirst(int data)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::addLast()
+ *   Descr: 
+ */
+void SSLColumn::addLast(int data)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::find()
+ *   Descr: return the index of the specified value, or -1 if not found
+ */
+int SSLColumn::find(int data)
+{
+    int pos = m_capacity / 2;
+
+    // loop through array to execute binary search
+    // minIndex  the lower bound of the array to check
+    // maxIndex the upper bound of the array to check
+    // curValue the value at the current position in array
+    for (int minIndex = 0, maxIndex = m_capacity, curValue = findAt(pos); curValue != data; pos = minIndex + (maxIndex - minIndex) / 2, curValue = findAt(pos)) {
+        if (minIndex == maxIndex || ((pos == minIndex) && (minIndex == maxIndex - 1)))
+            return -1;
+        if (curValue > data)
+            maxIndex = pos;
+        else
+            minIndex = pos;
+    }
+    
+    return pos;
+    
+}
+
+/*
+ *  Method: SSLColumn::findNearest()
+ *   Descr: return the index of the specified value, or the index of the nearest value if not found
+ */
+int SSLColumn::findNearest(int data)
+{
+    int pos = m_capacity / 2;
+
+    // loop through array to execute binary search
+    // minIndex  the lower bound of the array to check
+    // maxIndex the upper bound of the array to check
+    // curValue the value at the current position in array
+    for (int minIndex = 0, maxIndex = m_capacity, curValue = findAt(pos); curValue != data; pos = minIndex + (maxIndex - minIndex) / 2, curValue = findAt(pos)) {
+        if (minIndex == maxIndex || ((pos == minIndex) && (minIndex == maxIndex - 1)))
+            return pos;
+        if (curValue > data)
+            maxIndex = pos;
+        else
+            minIndex = pos;
+    }
+    
+    return pos;
+    
+}
+
+
+/*
+ *  Method: SSLColumn::findAt()
+ *   Descr: Return the value at the specified index of the array, with -1 pointing to the end of the array
+ */
+int SSLColumn::findAt(int pos)
+{
+    
+    // Throw range error if requested index is out of bounds
+    if (pos >= m_size)
+        std::range_error("pos is too high and is out of bounds");
+    else if (pos <= -1)
+        std::range_error("pos is too low and is out of bounds");
+    
+    return ~pos ?  m_data[(m_start+pos) % m_capacity] : m_end;
+}
+
+/*
+ *  Method: SSLColumn::bufferIndex()
+ *  Descr: Take a regular 0-based index and return the correspondingf index in the buffer
+ */
+int SSLColumn::bufferIndex(int index) {
+    return (m_start + index) % m_capacity;
+}
+
+
+/*
+ *  Method: SSLColumn::remove()
+ *   Descr: 
+ */
+int SSLColumn::remove(int data)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::removeFirst()
+ *   Descr: 
+ */
+int SSLColumn::removeFirst(void)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::removeLast()
+ *   Descr: 
+ */
+int SSLColumn::removeLast(void)
+{
+}
+
+
+/*
+ *  Method: SSLColumn::capacity()
+ *   Descr: 
+ */
+int SSLColumn::capacity()
+{
+}
+
+
+/*
+ *  Method: SSLColumn::size()
+ *   Descr: 
+ */
+int SSLColumn::size()
+{
+}
+
+
+/*
+ *  Method: SSLColumn::dump()
+ *   Descr: 
+ */
+void SSLColumn::dump()
+{
+}
+

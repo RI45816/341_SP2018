@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <in>SSLColumn.cpp</in>
+      <in>SortedSquareList.cpp</in>
+      <in>p1test01.cpp</in>
+      <in>p1test02.cpp</in>
+      <in>p1test03.cpp</in>
+      <in>p1test06.cpp</in>
+      <in>p1test07.cpp</in>
+      <in>p1testXX.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+      <itemPath>makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile</buildCommand>
+          <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="SSLColumn.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SortedSquareList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="p1test01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="p1test02.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="p1test03.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="p1test06.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="p1test07.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="p1testXX.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

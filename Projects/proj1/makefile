@@ -26,7 +26,7 @@ $(EXE): $(OBJS)
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 clean:
-	rm -f $(EXE) $(OBJS) $(wildcard *.stackdump) $(SOURCES:.cpp=.exe) $(wildcard *.exe)
+	rm -f $(EXE) $(OBJS) $(wildcard *.stackdump) $(SOURCES:.cpp=.exe) $(wildcard *.exe) $(wildcard *.out)
 	# rm *.o*
 	# rm *~ 
 

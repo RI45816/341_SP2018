@@ -19,6 +19,7 @@
  *********************************************/
 
 #include <iostream>
+#include <stdexcept>
 #include "SSLColumn.h"
 
 using std::endl;

@@ -76,9 +76,25 @@ private :
    int m_end;      // index AFTER last active column in top-level buffer
 
   // STUDENT-ADDED MEMBERS HERE
-//  ...
-//  ...
+  
+   // Run a binary search to find the nearest index
+   int findNearest(int data);
+   
+   // Parse index to correspond to m_start and m_end
+   int bufferIndex(int index);
+   
+   // Quadruple the size of SortedSquareList by doubling the capacity and adding new SSLColumns
+   void resizeSquareList();
+   
+   // Get the size of the specified column
+   int columnSize(int index);
   // END STUDENT-ADDED MEMBERS
+   
+   // Shift in the columns from the right
+   void shiftFromRight(int colNumber);
+   
+   // Shift in the columns from the left
+   void shiftFromLeft(int colNumber);
 
 };
 

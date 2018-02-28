@@ -1,0 +1,28 @@
+set confirm off 
+delete
+
+define zx
+undisp
+disp *this
+python for i in range(gdb.parse_and_eval('m_size')): gdb.execute("disp *m_cols[" + str(i) + "]");gdb.execute("disp *m_cols[" + str(i) + "].m_data@" + str(gdb.parse_and_eval('m_capacity')))
+disp *m_colInfo@m_capacity*2+1
+end
+
+b SortedSquareList::operator=(SortedSquareList const&)
+commands
+zx
+end
+
+# tb main
+# commands
+# silent
+# call dup2(open("input.txt", 0), 0)
+# continue
+# end
+
+
+define cv
+source -s gdb commands.txt
+end
+
+r

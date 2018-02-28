@@ -53,7 +53,7 @@ SSLColumn::SSLColumn(const SSLColumn &other) : m_capacity(other.m_capacity), m_s
  */
 SSLColumn::~SSLColumn()
 {
-    delete m_data;
+    delete[] m_data;
 }
 
 /*
@@ -66,6 +66,7 @@ const SSLColumn & SSLColumn::operator=(const SSLColumn &rhs) {
     if (m_capacity < rhs.m_capacity) {
         m_capacity = rhs.m_capacity;
         m_data = new int[m_capacity];
+        m_end = bufferIndex(m_size);
     }
 
     // Initialize variables based on rhs
@@ -94,6 +95,7 @@ void SSLColumn::add(int data) {
     
     int insertIndex = m_size ? findNearest(data) : 0; // Find the point of insertion for the array
     
+    // Use special functions if insertion point is at the beginning or end of an array
     if (insertIndex == 0)
         addFirst(data);
     else if (insertIndex == m_capacity - 1)
@@ -217,7 +219,9 @@ int SSLColumn::bufferIndex(int index) {
  */
 int SSLColumn::remove(int data) {
     int deleteIndex = find(data); // Get the index to delete
-    // 
+    
+    
+    // Use specialized functions if removing the first or last element
     if (deleteIndex == 0)
         removeFirst();
     else if (deleteIndex == m_capacity - 1)
@@ -249,7 +253,7 @@ int SSLColumn::removeFirst(void)
     m_start = (m_start + 1) % m_capacity;
     m_size--;
     
-    return findAt(0);
+    return m_data[(m_start+m_capacity-1)%m_capacity];
 }
 
 
@@ -265,7 +269,7 @@ int SSLColumn::removeLast(void)
     
     m_end = bufferIndex(--m_size);
     
-    return findAt(-1);
+    return m_data[m_end];
 }
 
 /*
@@ -295,7 +299,7 @@ int SSLColumn::size()
 void SSLColumn::dump() {
     cout << "SSLColumn::dump(): m_size = " << m_size << endl;
     for (int i = 0; i < m_size; i++)
-        cout << "[" << bufferIndex(i) << "] " << findAt(i) << ", ";
+        cout << "[" << i << "] " << findAt(i) << ", ";
     cout << endl;
 }
 

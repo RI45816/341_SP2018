@@ -1,6 +1,12 @@
 set confirm off 
 delete
 
+def xz
+python for i in range(gdb.parse_and_eval('m_size')): gdb.execute("p *m_cols[" + str(i) + "]");gdb.execute("p *m_cols[" + str(i) + "].m_data@" + str(gdb.parse_and_eval('m_capacity')))
+p *m_colInfo@m_capacity*2+1
+end
+
+
 define zx
 undisp
 disp *this
@@ -8,17 +14,30 @@ python for i in range(gdb.parse_and_eval('m_size')): gdb.execute("disp *m_cols["
 disp *m_colInfo@m_capacity*2+1
 end
 
-b SortedSquareList::operator=(SortedSquareList const&)
-commands
-zx
-end
+# py gdb.execute("b SortedSquareList.cpp:%s" % str([i for i,j in enumerate(open("SortedSquareList.cpp")) if ("// Determine the Square Dimension of the adjacent columns ") in j][0]))
+# commands
+# disp {left,right}
+# end
 
-# tb main
+# b SortedSquareList::remove(int)
 # commands
 # silent
-# call dup2(open("input.txt", 0), 0)
-# continue
+# zx
+# c
 # end
+
+def xc
+tb SortedSquareList::shiftFromLeft(int)
+tb SortedSquareList::shiftFromRight(int)
+c
+end
+
+tb main
+commands
+silent
+call dup2(open("input.txt", 0), 0)
+continue
+end
 
 
 define cv

@@ -312,10 +312,14 @@ int SortedSquareList::findNearest(int data) {
  *   Descr: Remove an element from the SortedSquareList
  */
 bool SortedSquareList::remove(int data) {
+    
+    // Can't remove anything from an empty array
+    if (!size()) return false;
+    
     int colNumber = findNearest(data); // The column in which the data is most likely to appear
     int square_dimension = ceil(sqrt(size())); // Sqaure dimension
 
-    if (data > m_colInfo[bufferIndex(colNumber)*2 + 1])
+    if (data > m_colInfo[bufferIndex(colNumber)*2 + 1] && colNumber +1 < m_size)
         colNumber++;
 
 
@@ -323,6 +327,8 @@ bool SortedSquareList::remove(int data) {
     bool success = ~m_cols[bufferIndex(colNumber)]->remove(data);
     if (success) {
         m_colInfo[m_capacity * 2]--;
+        if (data == m_colInfo[bufferIndex(colNumber)*2+1])
+            m_colInfo[bufferIndex(colNumber)*2+1] = m_cols[bufferIndex(colNumber)]->findAt(-1);
         
         // Kind of like a base case
         if (size() == 1) {
@@ -333,7 +339,8 @@ bool SortedSquareList::remove(int data) {
 
 
             // Determine the Square Dimension of the adjacent columns 
-            int left = colNumber ? columnSize(colNumber - 1) : 0, right = (colNumber < m_size - 1) ? columnSize(colNumber + 1) : 0;
+             double left = colNumber ? m_colInfo[bufferIndex(colNumber - 1)*2] / (double) colNumber : 0
+            , right = (colNumber < m_size-1) ? (m_colInfo[(bufferIndex(m_size + m_capacity - 1))*2] - m_colInfo[bufferIndex(colNumber)*2]) / (double) (m_size - 1 - colNumber) : 0;
 
             // Shift array
             if (left == square_dimension || right == square_dimension) {
@@ -442,7 +449,7 @@ void SortedSquareList::resizeSquareList() {
 int SortedSquareList::columnSize(int index)
 {
     // Use m_colInfo to get sizes
-    return m_colInfo[bufferIndex(index)*2] ? (index ? m_colInfo[bufferIndex(index)*2]-m_colInfo[bufferIndex(index-1)*2] : m_colInfo[bufferIndex(index)*2]) : 0;
+    return m_cols[bufferIndex(index)]->size();
 }
 
 
@@ -451,14 +458,12 @@ int SortedSquareList::columnSize(int index)
  *   Descr: Shift the columns in from the right
  */
 void SortedSquareList::shiftFromRight(int colNumber) {
-    int square_dimension = ceil(sqrt(size())), * shift = &square_dimension;
+    int square_dimension = ceil(sqrt(size())), dummy = 5, * shift = &dummy;
 
     // Go through and shift all the columns until it's no longer necessary
     for (int i = colNumber; i < m_size && shift; i++) {
-        if (columnSize(i) < square_dimension - 1) {
+        if (columnSize(i) < square_dimension - 1 && columnSize(i + 1) > columnSize(i)) {
             *shift = m_cols[bufferIndex(i + 1)]->removeFirst();
-            if (!columnSize(i + 1) - 1)
-                m_end = bufferIndex(--m_size);
         } else
             shift = 0;
 
@@ -466,7 +471,10 @@ void SortedSquareList::shiftFromRight(int colNumber) {
             m_cols[bufferIndex(i)]->add(*shift);
             m_colInfo[bufferIndex(i)*2 + 1] = *shift;
         }
-    }
+        // Remove empty columns
+        if (i < m_size -1 && !(columnSize(i +1) ^ 1))
+            m_end = bufferIndex(--m_size);
+        }
 }
 
 
@@ -475,22 +483,24 @@ void SortedSquareList::shiftFromRight(int colNumber) {
  *   Descr: Shift the columns in from the left
  */
 void SortedSquareList::shiftFromLeft(int colNumber) {
-    int square_dimension = ceil(sqrt(size())), * shift = &square_dimension;
+    int square_dimension = ceil(sqrt(size())), dummy = 5, * shift = &dummy;
 
     // Go through and shift all the columns until it's no longer necessary
     for (int i = colNumber; i >= 0; i--) {
-        if (columnSize(i) < square_dimension - 1) {
+        if (columnSize(i) < square_dimension-1 && i && columnSize(i-1) > columnSize(i)) {
             *shift = m_cols[bufferIndex(i - 1)]->removeLast();
-            if (!columnSize(i - 1) - 1) {
-                m_start = (m_start + 1) % m_capacity;
-                m_size--;
-            }
         } else
             shift = 0;
 
         if (shift) {
             m_cols[bufferIndex(i)]->add(*shift);
         }
+        
+            if (i && !(columnSize(i - 1) ^ 1)) {
+                m_start = (m_start + 1) % m_capacity;
+                m_size--;
+            }
+
     }
 }
 

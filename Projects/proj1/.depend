@@ -1,0 +1,2 @@
+SortedSquareList.o: SortedSquareList.h SSLColumn.h
+SSLColumn.o: SSLColumn.h

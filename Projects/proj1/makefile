@@ -56,6 +56,7 @@ run08:
 run09:
 	g++ p1test09.cpp SSLColumn.cpp SortedSquareList.cpp -o t09.out
 runXX:
+	g++ -g p1testXX.cpp SSLColumn.cpp SortedSquareList.cpp
 	g++ p1testXX.cpp SSLColumn.cpp SortedSquareList.cpp -o tXX.out
 	
 depend: .depend

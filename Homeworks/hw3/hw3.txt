@@ -1,0 +1,9 @@
+Question 1: O(log_2(n)); because the function is dividing n by 2 until it reaches 1, thus it divided for log_2(n) times
+Question 2:	O(n); because though the program divides n by 2 until it reaches 1, which is an O(log_2(n)) fragment, it increments t "n" times, which is O(n), so O(log_2(n)+n)=O(n)
+Question 3:	O(n log_2(n)); We multiply the O(log_2(n)) obtained from dividing n by 2 until it reaches 1 with the O(n) obtained from incrementing i until it reaches n
+Question 4:	O(n log_2(n)); Multiply the O(n) obtained from incrementing count until x with the O(log_2(n)) from dividing x by 2 until it reaches 1
+Question 5:	O(1); t starts of as greater than n so the only part of the program the runs is checking the if statement and the assignment, both of which are O(1)
+Question 6:	O(1); int sum = n is O(1), loopIt(2) is O(2)=O(1), loopIt(4) is O(4)=O(1), thus O(1)+O(1)+O(1)=O(3)=O(1)
+Question 7:	O(sqrt(n)); the incrementing i makes the values of sum increase like a fibonacci sequence. In order for sum to catch up with n, it needs O(1.4*sqrt(n)+1)=O(sqrt(n)) iterations
+Question 8:	O(n^2); int j = 2 * i n times is O(n) multiplied by j = j +2 which is O(n/2)=O(n), so O(n) * O(n) = O(n^2)
+Question 9:	O(n log_2(n)); divides n by 2 until it reaches 0 which is O(log_2(n)) multiplied by looping for j values which is O(j) = O(n) so O(log_2(n)) * O(n) = O(n log_2(n))

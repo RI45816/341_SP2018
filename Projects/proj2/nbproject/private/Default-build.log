@@ -1,0 +1,5 @@
+g++ -Wall -g -c DNode.cpp 
+g++ -Wall -g -c INode.cpp 
+g++ -Wall -g -c Int341.cpp 
+g++ -Wall -g -c SqList.cpp 
+g++ -Wall -g DNode.o INode.o Int341.o SqList.o p2testXX.cpp -o p2testXX

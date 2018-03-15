@@ -1,0 +1,8 @@
+Script started on Wed Mar 14 15:34:32 2018
+sh-4.4$ py  gdb.bat p2comptest.exe
+sh: gdb.bat: command not found
+sh-4.4$ q
+sh: q: command not found
+sh-4.4$ exit
+
+Script done on Wed Mar 14 15:34:50 2018

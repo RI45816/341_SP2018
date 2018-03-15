@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <code-assistance-data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <code-model-enabled>true</code-model-enabled>
+    </code-assistance-data>
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>0</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/Int341.h</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/INode.cpp</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/Int341.cpp</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/DNode.h</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/SqList.h</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/SqList.cpp</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/p2testXX.cpp</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/INode.h</file>
+            <file>file:/C:/Users/amozu/OneDrive%20-%20UMBC/SP2018/CMSC%20341/341_SP2018/Projects/proj2/DNode.cpp</file>
+        </group>
+    </open-files>
+    <preferences xmlns="http://www.netbeans.org/ns/auxiliary-configuration-preferences/1">
+        <module name="org-netbeans-modules-cnd-discovery">
+            <property name="rootFolder" value="C:\Users\amozu\OneDrive - UMBC\SP2018\CMSC 341\341_SP2018\Projects\proj2"/>
+        </module>
+    </preferences>
+</project-private>

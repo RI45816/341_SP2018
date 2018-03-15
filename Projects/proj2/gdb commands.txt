@@ -1,0 +1,130 @@
+define cv
+source -s gdb commands.txt
+end
+# python gdb.execute("watch *%s if SqList::debug_count >= %s && SqList::debug_count < %s" % (str(gdb.parse_and_eval("&SqList::debug_count")).split()[0],500,531))
+# commands
+# pl
+# c
+# end
+
+define dc
+python gdb.execute("watch *%s if SqList::debug_count >= %s" % (str(gdb.parse_and_eval("&SqList::debug_count")).split()[0],$arg0))
+commands
+# silent
+pl
+# bt
+# q
+end
+end
+
+# set logging file output.txt
+# set logging overwrite on
+# set logging redirect on
+# set logging on
+
+# undisp
+set pagination off
+# set unwindonsignal on
+# handle SIGSEGV nostop
+# handle SIGTRAP nostop noprint
+# tb 153
+# if i == 140
+# commands
+# b SqList::consolidate()
+# commands
+# p dump()
+# b 267
+# b 271
+# b 279
+# b 287
+# b 263
+# commands
+# silent
+# p *it
+# p *it->m_dNode
+
+# end
+# c
+# end
+# c
+# end
+# b SqList::removeAt(const Int341 &) if m_size == 140
+# b SqList::removeAt(int)
+# if m_size
+# b SqList::removeAt(int) if debug_count > 499
+# commands
+# commands
+# b 279
+# c
+# end
+# c
+# end
+# && it == *getSegmentFromIndex(13)
+# commands
+# b SqList.cpp:263 if *it == *getSegmentFromIndex(13)
+# c
+# end
+# commands
+# b 274
+# c
+# end
+# b SqList::add(const Int341 &) if m_size
+# if data.m_data == 990
+# b SqList.cpp:96 if m_size == 5
+# b SqList.cpp:226 if m_size == 19
+# b 147
+# commands
+# silent
+# if (debug_count > 499)
+# pl
+# continue
+# end
+# b 175
+# b SqList.cpp:50
+# b 51
+dc 614
+
+# b 166 if *0x10040b040 > 605
+# commands
+# silent
+# p S.dump()
+# continue
+# # disp {m_iList .front(),m_iList .back ()}
+# # disp {*m_iList .front().m_dNode,*m_iList .back ().m_dNode}
+# # disp {*it}
+# # disp
+# end
+
+define pl
+call dump()
+plist m_iList INode
+# printf "List size = %u \n", $size
+# python for i in range(gdb.parse_and_eval('m_iList.size()')): gdb.execute("p *getSegmentFromIndex(%s)" % i);gdb.execute("p *getSegmentFromIndex(%s)->m_dNode" % i)
+# python
+# class _iterator(Iterator):
+# for 
+
+
+# p m_iList
+end
+
+# b SqList::SqList()
+# commands
+# silent
+# c
+# end
+
+b main
+commands
+silent
+# call dup2(open("output.txt",1), 1)
+# python gdb.execute("watch %s if debug_count >= %s" % (gdb.parse_and_eval("&SqList::debug_count"),500))
+call dup2(open("input.txt", 0), 0)
+continue
+end
+
+
+
+r > output.txt
+bt
+# q

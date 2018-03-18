@@ -26,8 +26,8 @@ using namespace std;
  *  Method: DNode::DNode()
  *   Descr: Default constructor for DNode
  */
-//DNode::DNode() : m_next(NULL) {
-//}
+DNode::DNode() : m_next(0) {
+}
 
 
 
@@ -46,6 +46,7 @@ const DNode & DNode::operator=(const DNode &rhs) {
     m_data = rhs.m_data;
     return *this;
 }
+
 
 /*
  *  Method: DNode::DNode()

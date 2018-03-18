@@ -1,5 +1,7 @@
 EXE = $(patsubst %.cpp,%,$(wildcard p2*.cpp)) $(patsubst %.cpp,%,$(wildcard test*.cpp))
-CXXFLAGS = -Wall -g
+# CXXFLAGS = -Wall -g
+CXXFLAGS = -Og -ggdb
+
 SOURCES = $(filter-out $(patsubst %, %.cpp,$(EXE)),$(wildcard *.cpp))
 SOURCES2 = $(SOURCES:.cpp=)
 OBJS = $(SOURCES:.cpp=.o)
@@ -45,9 +47,8 @@ run(%): %.cpp $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) $< -o $%
 	./$% < input.txt > output.txt
 	
-gdb(%): %.cpp $(OBJS) run(%)
-	# $(CXX) $(CXXFLAGS) $(OBJS) $< -o $%
-	# ./$% < input.txt 
+gdb(%): %.cpp $(OBJS) 
+	$(CXX) $(CXXFLAGS) $(OBJS) $< -o $%
 	./$@.bat $% 
 
 	

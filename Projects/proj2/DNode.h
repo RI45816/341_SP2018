@@ -27,7 +27,7 @@
 class DNode {
 public:
     // default constructor
-//    DNode();
+    DNode();
 
     // Constructor with initialized variable
     DNode(Int341 data);
@@ -52,6 +52,8 @@ public:
     
     // Set the value of m_data
     void setData(Int341 data);
+    
+    
     Int341  m_data;
     DNode * m_next;
 private:

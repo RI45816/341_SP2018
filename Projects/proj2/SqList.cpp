@@ -40,33 +40,57 @@ SqList::SqList() :m_size(0) {
  *  Method: SqList::SqList()
  *   Descr: Copy constructor for SqList
  */
-SqList::SqList(const SqList& other) : m_size(other.m_size) {
-    m_first = new DNode(*other.m_first);
-    m_last = new DNode(*other.m_last);
-    for (DNode * curNode = m_first, * curOtherNode = other.m_first->getNext(); curOtherNode; curNode=curNode->getNext(), curOtherNode=curOtherNode->getNext()) 
-        curNode->setNext(new DNode(*curOtherNode));
-    int size = 0;
-    for (list<INode>::const_iterator it=other.m_iList.begin();it!=other.m_iList.end();size+=it++->GetSize()) {
-        m_iList.push_back(INode(getNthNodeInSegment(other.m_iList.begin(), size),it->GetSize()));
+SqList::SqList(const SqList& other) : m_size(other.m_size), m_first(new DNode(*other.m_first)) {
+   
+    // Create copies of all the nodes in other and link them to the new list
+    for (DNode * curNode = m_first, * curOtherNode = other.m_first->getNext(); curOtherNode; curNode = curNode->getNext(), curOtherNode = curOtherNode->getNext()) {
+        curNode->m_next = (new DNode(*curOtherNode));
     }
+    
+    
+    
+    // Create the upper level list
+    m_iList.push_back(INode(m_first));
+    for (list<INode>::const_iterator it = ++other.m_iList.begin(), it2 = m_iList.begin(); it != other.m_iList.end(); it++, it2++) {
+        m_iList.push_back(INode(getNthNodeInSegment(it2, it2->GetSize()), it->GetSize()));
+    }
+    
+    // Set m_last to the last element in the new list
+    m_last = getNthNodeInSegment(--m_iList.end(), m_iList.back().GetSize() - 1);
 }
+
+
 
 /*
  *  Method: SqList::operator=()
  *   Descr: Overloaded assignment operator for SqList
  */
 const SqList & SqList::operator=(const SqList &rhs) {
-    m_first = rhs.m_first;
-    m_last = rhs.m_last;
-    m_size = rhs.m_size;
-    for (DNode * curNode = m_first, * curOtherNode = rhs.m_first->getNext(); curOtherNode; curNode=curNode->getNext(),curOtherNode=curOtherNode->getNext())
-        curNode->setNext(curOtherNode);
-    
-    for (list<INode>::const_iterator it=rhs.m_iList.begin();it!=rhs.m_iList.end();it++) {
-        m_iList.push_back(*it);
-    }        
-    return *this;
+
+    if (this != &rhs) {
+
+        //      
+        m_first = new DNode;
+        *m_first = *rhs.m_first;
+        m_size = rhs.m_size;
+        for (DNode * curNode = m_first, * curOtherNode = rhs.m_first->getNext(); curOtherNode; curNode = curNode->getNext(), curOtherNode = curOtherNode->getNext()) {
+            DNode * newNode = new DNode;
+            *newNode = *curOtherNode;
+            curNode->setNext(newNode);
+        }
+
+
+        m_iList.push_back(INode(m_first));
+        for (list<INode>::const_iterator it = ++rhs.m_iList.begin(), it2 = m_iList.begin(); it != rhs.m_iList.end(); it++, it2++) {
+            m_iList.push_back(INode(getNthNodeInSegment(it2, it2->GetSize()), it->GetSize()));
+        }
+        m_last = getNthNodeInSegment(--m_iList.end(),m_iList.back().GetSize()-1);
+        
+        return *this;
+    }
 }
+
+
 
 /*
  *  Method: SqList::SqList()
@@ -74,21 +98,25 @@ const SqList & SqList::operator=(const SqList &rhs) {
  */
 SqList::~SqList() {
     DNode * curNode = m_first;
-    while (curNode && curNode->getNext()) {
-        DNode * delNode = curNode;
+    DNode * delNode;
+    while (curNode) {
+        delNode = curNode;
         curNode = curNode->getNext();
         delete delNode;
+        delNode = 0;
     }
-    delete m_last;
+        m_last = 0;
+        m_first = 0;
+        curNode =0;
+        delNode = 0;
+    m_iList.clear();
 }
-
 /*
  *  Method: SqList::add()
  *   Descr: 
  */
 void SqList::add(const Int341 &data)
 {
-    // cout << debug_count++ << endl;
     // if the list is empty, create 
     if (!m_size++) {
         m_first = m_last = new DNode(data);
@@ -146,7 +174,6 @@ Int341 SqList::remove(const Int341 &data)
  */
 Int341 SqList::removeAt(int pos) {
 
-    // cout << debug_count++ << endl;
 
     // If the index is invalid, throw an error
     if (pos >= m_size || pos < -1)
@@ -163,6 +190,7 @@ Int341 SqList::removeAt(int pos) {
         m_iList.front().changeSize(-1);
         m_iList.front().SetDNode(m_first);
         delete curNode;
+        curNode = 0;
     } else if (pos == m_size - 1) {
         DNode * curNode = m_last;
         element = *curNode->getData();
@@ -170,6 +198,7 @@ Int341 SqList::removeAt(int pos) {
         m_last = getNthNodeInSegment(--m_iList.end(),m_iList.back().GetSize()-1);
         m_last->setNext(0);
         delete curNode;
+        curNode = 0;
     } else {
 
         // Loop through INodes until the segment with the number is found
@@ -194,6 +223,7 @@ Int341 SqList::removeAt(int pos) {
                 element = *removeNode->getData();
                 curNode->setNext(removeNode->getNext());
                 delete removeNode;
+                removeNode = 0;
             }
         } else {
             DNode * curNode = getNthNodeInSegment(start++, start->GetSize() - 1);
@@ -204,6 +234,7 @@ Int341 SqList::removeAt(int pos) {
                 curNode->setNext(removeNode->getNext());
                 start->SetDNode(curNode->getNext());
                 delete removeNode;
+                removeNode = 0;
             }
         }
 
@@ -226,7 +257,6 @@ Int341 SqList::removeAt(int pos) {
  */
 Int341 & SqList::operator[](int pos)
 {
-    // cout << debug_count++ << endl;
     
     // If index out of bounds throw out of range error
     if (pos >= m_size || pos < -1)
@@ -309,7 +339,6 @@ void SqList::dump()
  *   Descr: Resize the list segments so that no 
  */
 void SqList::consolidate() {
-    // cout << debug_count++ << endl;
 
 
     double square_dimension = sqrt(m_size);

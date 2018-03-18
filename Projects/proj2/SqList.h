@@ -81,6 +81,7 @@ public:
    // Retreive the nth Node in the segment
    DNode * getNthNodeInSegment(list<INode>::const_iterator it, int n);
    
+   
     list <INode> m_iList; // list of INodes to help keep the list square
     int m_size; // Size of the entire list
     DNode * m_first; // Point to the first node in the list

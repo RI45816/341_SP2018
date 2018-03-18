@@ -49,7 +49,8 @@ INode::INode(const INode& other) : m_dNode(other.m_dNode), m_size(other.m_size) 
  *   Descr: Overloaded assignment operator for INode
  */
 const INode & INode::operator=(const INode &rhs) {
-    m_dNode = rhs.m_dNode;
+    m_dNode = new DNode;
+    *m_dNode = *rhs.m_dNode;
     m_size = rhs.m_size;
     return *this;
 }

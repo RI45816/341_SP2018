@@ -1,4 +1,0 @@
-SqList.o: SqList.h INode.h DNode.h Int341.h
-Int341.o: Int341.h
-DNode.o: DNode.h Int341.h
-INode.o: INode.h DNode.h Int341.h

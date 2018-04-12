@@ -1,0 +1,214 @@
+define cv
+d
+source -s gdb commands.txt
+end
+# python gdb.execute("watch *%s if QTNode::debug_count >= %s && QTNode::debug_count < %s" % (str(gdb.parse_and_eval("&QTNode::debug_count")).split()[0],500,531))
+# commands
+# pl
+# c
+# end
+
+define il
+info locals
+end
+
+define dc
+python gdb.execute("watch *%s if QTNode::debug_count >= %s" % (str(gdb.parse_and_eval("&QTNode::debug_count")).split()[0],$arg0))
+commands
+# silent
+# pl
+bt
+# q
+end
+end
+
+define log
+set logging file output.txt
+set logging overwrite on
+set logging on
+end
+# set logging redirect on
+
+# undisp
+set pagination off
+# set unwindonsignal on
+# handle SIGSEGV nostop
+# handle SIGTRAP nostop noprint
+# tb 153
+# if i == 140
+# commands
+# b QTNode::consolidate()
+# commands
+# p dump()
+# b 267
+# b 271
+# b 279
+# b 287
+# b 263
+# commands
+# silent
+# p *it
+# p *it->m_dNode
+
+# end
+# c
+# end
+# c
+# end
+# b QTNode::removeAt(const Int341 &) if m_size == 140
+# b QTNode::removeAt(int)
+# if m_size
+# b QTNode::removeAt(int) if debug_count > 499
+# commands
+# commands
+# b 279
+# c
+# end
+# c
+# end
+# && it == *getSegmentFromIndex(13)
+# commands
+# b QTNode.cpp:263 if *it == *getSegmentFromIndex(13)
+# c
+# end
+# commands
+# b 274
+# c
+# end
+# b QTNode::add(const Int341 &) if m_size
+# if data.m_data == 990
+# b QTNode.cpp:96 if m_size == 5
+# b QTNode.cpp:226 if m_size == 19
+# b 147
+# commands
+# silent
+# if (debug_count > 499)
+# pl
+# continue
+# end
+# b 175
+# b QTNode.cpp:50
+# b 51
+# b 175
+# dc 1
+
+
+
+# b 166 if *0x10040b040 > 605
+# commands
+# silent
+# p S.dump()
+# continue
+# # disp {m_iList .front(),m_iList .back ()}
+# # disp {*m_iList .front().m_dNode,*m_iList .back ().m_dNode}
+# # disp {*it}
+# # disp
+# end
+
+# define pl
+# commands
+# plist m_iList INode
+# end
+# define pl
+# python
+# try:
+# gdb.execute("call dump()")
+# except:
+# gdb.execute("frame")
+# finally:
+# gdb.execute("plist m_iList INode")
+# end
+# printf "List size = %u \n", $size
+# python for i in range(gdb.parse_and_eval('m_iList.size()')): gdb.execute("p *getSegmentFromIndex(%s)" % i);gdb.execute("p *getSegmentFromIndex(%s)->m_dNode" % i)
+# python
+# class _iterator(Iterator):
+# for 
+# end
+
+# b 175
+
+# p m_iList
+
+# b QTNode::QTNode()
+# commands
+# silent
+# c
+# end
+
+# disp *(DNode*)0x60005f9f0
+# watch *0x60005f9f0
+# commands
+# nt
+# btq
+# end
+
+# b QTNode::~QTNode()
+# commands
+# nt
+# bt
+# end
+# tb QTNode::~QTNode()
+# commands
+# c
+# end
+
+# 0x60004ef90
+# 0x60004e4d0
+# 0x60004e460-0x60004f220
+
+# 0x60004f0c0
+# 0x60004f200
+
+
+# b QTNode::QTNode(QTNode const&)
+
+define nt
+python
+# x = ["*(DNode*)%s" % hex(0x60005f9b0+0x20*i) for i in range(1,96,1)]
+x = ['*(DNode*)0x60005f110','*(DNode*)0x60005f190','*(DNode*)0x60005f1f0','*(DNode*)0x60005e4d0','*(DNode*)0x60005e4f0','*(DNode*)0x60005e510','*(DNode*)0x60005e530','*(DNode*)0x60005f2c0','*(DNode*)0x60005f2e0','*(DNode*)0x60005f300','*(DNode*)0x60005f320','*(DNode*)0x60005f340','*(DNode*)0x60005f360','*(DNode*)0x60005f380','*(DNode*)0x60005f3a0','*(DNode*)0x60005f3c0','*(DNode*)0x60005f3e0','*(DNode*)0x60005f400','*(DNode*)0x60005f420','*(DNode*)0x60005f440','*(DNode*)0x60005e580','*(DNode*)0x60005e5a0','*(DNode*)0x60005e5c0','*(DNode*)0x60005e5e0','*(DNode*)0x60005e600','*(DNode*)0x60005e620','*(DNode*)0x60005e640','*(DNode*)0x60005e660','*(DNode*)0x60005e680','*(DNode*)0x60005e6a0','*(DNode*)0x60005e6c0','*(DNode*)0x60005e6e0','*(DNode*)0x60005e700','*(DNode*)0x60005e720','*(DNode*)0x60005e740','*(DNode*)0x60005e760','*(DNode*)0x60005e780','*(DNode*)0x60005e7a0','*(DNode*)0x60005e7c0','*(DNode*)0x60005e7e0','*(DNode*)0x60005e800','*(DNode*)0x60005e820','*(DNode*)0x60005e840','*(DNode*)0x60005e860','*(DNode*)0x60005e880','*(DNode*)0x60005e8a0','*(DNode*)0x60005e8c0','*(DNode*)0x60005e8e0','*(DNode*)0x60005e900','*(DNode*)0x60005e920','*(DNode*)0x60005e940','*(DNode*)0x60005e960','*(DNode*)0x60005e980','*(DNode*)0x60005e9a0','*(DNode*)0x60005e9c0','*(DNode*)0x60005e9e0','*(DNode*)0x60005ea00','*(DNode*)0x60005ea20','*(DNode*)0x60005ea40','*(DNode*)0x60005ea60','*(DNode*)0x60005ea80','*(DNode*)0x60005eaa0','*(DNode*)0x60005eac0','*(DNode*)0x60005eae0','*(DNode*)0x60005eb00','*(DNode*)0x60005eb20','*(DNode*)0x60005eb40','*(DNode*)0x60005eb60','*(DNode*)0x60005eb80','*(DNode*)0x60005eba0','*(DNode*)0x60005ebc0','*(DNode*)0x60005ebe0','*(DNode*)0x60005f490','*(DNode*)0x60005f4b0','*(DNode*)0x60005f4d0','*(DNode*)0x60005f4f0','*(DNode*)0x60005f510','*(DNode*)0x60005f530','*(DNode*)0x60005f550','*(DNode*)0x60005f570','*(DNode*)0x60005f590','*(DNode*)0x60005f5b0','*(DNode*)0x60005f5d0','*(DNode*)0x60005f5f0','*(DNode*)0x60005f610','*(DNode*)0x60005f630','*(DNode*)0x60005f650','*(DNode*)0x60005f670','*(DNode*)0x60005f690','*(DNode*)0x60005f6b0','*(DNode*)0x60005f6d0','*(DNode*)0x60005f6f0','*(DNode*)0x60005f710','*(DNode*)0x60005f730','*(DNode*)0x60005f750','*(DNode*)0x60005f770','*(DNode*)0x60005f990','*(DNode*)0x60005f9b0','*(DNode*)0x60005f9d0','*(DNode*)0x60005f9f0','*(DNode*)0x60005fa10','*(DNode*)0x60005fa30','*(DNode*)0x60005fa50','*(DNode*)0x60005fa70','*(DNode*)0x60005fa90','*(DNode*)0x60005fab0','*(DNode*)0x60005fad0','*(DNode*)0x60005faf0','*(DNode*)0x60005fb10','*(DNode*)0x60005fb30','*(DNode*)0x60005fb50','*(DNode*)0x60005fb70','*(DNode*)0x60005fb90','*(DNode*)0x60005fbb0','*(DNode*)0x60005fbd0','*(DNode*)0x60005fbf0','*(DNode*)0x60005fc10','*(DNode*)0x60005fc30','*(DNode*)0x60005fc50','*(DNode*)0x60005fc70','*(DNode*)0x60005fc90','*(DNode*)0x60005fcb0','*(DNode*)0x60005fcd0','*(DNode*)0x60005fcf0','*(DNode*)0x60005fd10','*(DNode*)0x60005fd30','*(DNode*)0x60005fd50','*(DNode*)0x60005fd70','*(DNode*)0x60005fd90','*(DNode*)0x60005fdb0','*(DNode*)0x60005fdd0','*(DNode*)0x60005fdf0','*(DNode*)0x60005fe10','*(DNode*)0x60005fe30','*(DNode*)0x60005fe50','*(DNode*)0x60005fe70','*(DNode*)0x60005fe90','*(DNode*)0x60005feb0','*(DNode*)0x60005fed0','*(DNode*)0x60005fef0','*(DNode*)0x60005ff10','*(DNode*)0x60005ff30','*(DNode*)0x60005ff50','*(DNode*)0x60005ff70','*(DNode*)0x60005ff90','*(DNode*)0x60005ffb0','*(DNode*)0x60005ffd0','*(DNode*)0x60005fff0','*(DNode*)0x600060010','*(DNode*)0x600060030','*(DNode*)0x600060050','*(DNode*)0x600060070','*(DNode*)0x600060090','*(DNode*)0x6000600b0','*(DNode*)0x6000600d0','*(DNode*)0x6000600f0','*(DNode*)0x600060110','*(DNode*)0x600060130','*(DNode*)0x600060150','*(DNode*)0x600060170','*(DNode*)0x600060190','*(DNode*)0x6000601b0','*(DNode*)0x6000601d0','*(DNode*)0x6000601f0','*(DNode*)0x600060210','*(DNode*)0x600060230','*(DNode*)0x600060250','*(DNode*)0x600060270','*(DNode*)0x600060290','*(DNode*)0x6000602b0','*(DNode*)0x6000602d0','*(DNode*)0x6000602f0','*(DNode*)0x600060310','*(DNode*)0x600060330','*(DNode*)0x600060350','*(DNode*)0x600060370','*(DNode*)0x600060390','*(DNode*)0x6000603b0','*(DNode*)0x6000603d0','*(DNode*)0x6000603f0','*(DNode*)0x600060410','*(DNode*)0x600060430','*(DNode*)0x600060450','*(DNode*)0x600060470','*(DNode*)0x600060490','*(DNode*)0x6000604b0','*(DNode*)0x6000604d0','*(DNode*)0x6000604f0','*(DNode*)0x600060510','*(DNode*)0x600060530','*(DNode*)0x600060550','*(DNode*)0x600060570','*(DNode*)0x6000293e0','*(DNode*)0x600029450','*(DNode*)0x600029470','*(DNode*)0x6000294c0','*(DNode*)0x6000294e0','*(DNode*)0x600029500','*(DNode*)0x600029520','*(DNode*)0x600029570','*(DNode*)0x600029590','*(DNode*)0x60005ded0','*(DNode*)0x60005def0','*(DNode*)0x60005df40','*(DNode*)0x60005df60','*(DNode*)0x60005df80','*(DNode*)0x60005dfa0','*(DNode*)0x60005dfc0','*(DNode*)0x60005dfe0','*(DNode*)0x60005e030','*(DNode*)0x60005e050','*(DNode*)0x60005e070','*(DNode*)0x60005e090','*(DNode*)0x60005e0b0','*(DNode*)0x60005e0d0','*(DNode*)0x60005e120','*(DNode*)0x60005e140','*(DNode*)0x60005e160','*(DNode*)0x60005e180','*(DNode*)0x60005e1a0','*(DNode*)0x60005e1c0','*(DNode*)0x60005e210','*(DNode*)0x60005e230','*(DNode*)0x60005e250','*(DNode*)0x60005e270','*(DNode*)0x60005e290','*(DNode*)0x60005e2b0','*(DNode*)0x600029490','*(DNode*)0x60005e2d0','*(DNode*)0x60005e320','*(DNode*)0x60005e340','*(DNode*)0x60005e360','*(DNode*)0x60005e380','*(DNode*)0x60005e3a0','*(DNode*)0x60005e3c0','*(DNode*)0x60005e3e0','*(DNode*)0x60005e400','*(DNode*)0x60005e450','*(DNode*)0x60005e470','*(DNode*)0x60005e490','*(DNode*)0x60005e4b0','*(DNode*)0x60005e4d0','*(DNode*)0x60005e4f0','*(DNode*)0x60005e510','*(DNode*)0x60005e530','*(DNode*)0x60005e580','*(DNode*)0x60005e5a0','*(DNode*)0x60005e5c0','*(DNode*)0x60005e5e0','*(DNode*)0x60005e600','*(DNode*)0x60005e620','*(DNode*)0x60005e640','*(DNode*)0x60005e660','*(DNode*)0x60005e680','*(DNode*)0x60005e6d0','*(DNode*)0x60005e6f0','*(DNode*)0x60005e710','*(DNode*)0x60005e730','*(DNode*)0x60005e750','*(DNode*)0x60005e770','*(DNode*)0x60005e790','*(DNode*)0x60005e7b0','*(DNode*)0x60005e7d0','*(DNode*)0x60005e820','*(DNode*)0x60005e840','*(DNode*)0x60005e860','*(DNode*)0x60005e880','*(DNode*)0x60005e8a0','*(DNode*)0x60005e8c0','*(DNode*)0x60005e8e0','*(DNode*)0x60005e900','*(DNode*)0x60005e920','*(DNode*)0x60005e940','*(DNode*)0x60005e960','*(DNode*)0x60005e9b0','*(DNode*)0x60005e9d0','*(DNode*)0x60005e9f0','*(DNode*)0x60005ea10','*(DNode*)0x60005ea30','*(DNode*)0x60005ea50','*(DNode*)0x60005ea70','*(DNode*)0x60005ea90','*(DNode*)0x60005eab0','*(DNode*)0x60005ead0','*(DNode*)0x60005eaf0','*(DNode*)0x60005eb40','*(DNode*)0x60005eb60','*(DNode*)0x60005eb80','*(DNode*)0x60005eba0','*(DNode*)0x60005ebc0','*(DNode*)0x60005ebe0','*(DNode*)0x600029540','*(DNode*)0x60005e000','*(DNode*)0x60005ec00','*(DNode*)0x60005ec20','*(DNode*)0x60005ec40','*(DNode*)0x60005ec60','*(DNode*)0x60005ec80','*(DNode*)0x60005eca0','*(DNode*)0x60005ecc0','*(DNode*)0x60005ece0','*(DNode*)0x60005ed00','*(DNode*)0x60005ed20','*(DNode*)0x60005ed40','*(DNode*)0x60005ed90','*(DNode*)0x60005edb0','*(DNode*)0x60005edd0','*(DNode*)0x60005edf0','*(DNode*)0x60005ee10','*(DNode*)0x60005ee30','*(DNode*)0x60005ee50','*(DNode*)0x60005ee70','*(DNode*)0x60005ee90','*(DNode*)0x60005eeb0','*(DNode*)0x60005eed0','*(DNode*)0x60005eef0','*(DNode*)0x60005ef40','*(DNode*)0x60005ef60','*(DNode*)0x60005ef80','*(DNode*)0x60005efa0','*(DNode*)0x60005efc0','*(DNode*)0x60005efe0','*(DNode*)0x60005f000','*(DNode*)0x60005f020','*(DNode*)0x60005f040','*(DNode*)0x60005f060','*(DNode*)0x60005f080','*(DNode*)0x60005f0a0','*(DNode*)0x60005f0f0','*(DNode*)0x60005f110','*(DNode*)0x60005f130','*(DNode*)0x60005f150','*(DNode*)0x60005f170','*(DNode*)0x60005f190','*(DNode*)0x60005f1b0','*(DNode*)0x60005f1d0','*(DNode*)0x60005f1f0','*(DNode*)0x60005f210','*(DNode*)0x60005f230','*(DNode*)0x60005f250','*(DNode*)0x60005f270','*(DNode*)0x60005f2c0','*(DNode*)0x60005f2e0','*(DNode*)0x60005f300','*(DNode*)0x60005f320','*(DNode*)0x60005f340','*(DNode*)0x60005f360','*(DNode*)0x60005f380','*(DNode*)0x60005f3a0','*(DNode*)0x60005f3c0','*(DNode*)0x60005f3e0','*(DNode*)0x60005f400','*(DNode*)0x60005f420','*(DNode*)0x60005f440','*(DNode*)0x60005f490','*(DNode*)0x60005f4b0','*(DNode*)0x60005f4d0','*(DNode*)0x60005f4f0','*(DNode*)0x60005f510','*(DNode*)0x60005f530','*(DNode*)0x60005f550','*(DNode*)0x60005f570','*(DNode*)0x60005f590','*(DNode*)0x60005f5b0','*(DNode*)0x60005f5d0','*(DNode*)0x60005f5f0','*(DNode*)0x60005f610','*(DNode*)0x60005f630','*(DNode*)0x60005f680','*(DNode*)0x60005f6a0','*(DNode*)0x60005f6c0','*(DNode*)0x60005f6e0','*(DNode*)0x60005f700','*(DNode*)0x60005f720','*(DNode*)0x60005f740','*(DNode*)0x60005f760','*(DNode*)0x60005f780','*(DNode*)0x60005f7a0','*(DNode*)0x60005f7c0','*(DNode*)0x60005f7e0','*(DNode*)0x60005f800','*(DNode*)0x60005f820','*(DNode*)0x60005f870','*(DNode*)0x60005f890','*(DNode*)0x60005f8b0','*(DNode*)0x60005f8d0','*(DNode*)0x60005f8f0','*(DNode*)0x60005e1e0','*(DNode*)0x60005f910','*(DNode*)0x60005f930','*(DNode*)0x60005f950',]
+# try:
+import json
+gdb.execute("p {%s}" % json.dumps(x).replace('"',"")[1:-1])
+# except:
+	
+# gdb.execute("p {%s}" % json.dumps(x[:49]).replace('"',"")[1:-1])
+end
+end
+
+tb QTNode::add(Point const&, int)
+commands
+disp *this
+b 143
+b 186
+b QTNode::add(Point const&, int)
+end
+
+tb QTNode::QTNode(QTNode**, BBox, int)
+commands
+disp *this
+b QTNode::QTNode(QTNode**, BBox, int)
+end
+
+
+
+b main
+commands
+silent
+d
+
+# tb QTNode.cpp:243 if curNode[0] && curNode[0].m_bounds.m_dim == 2
+dc 3
+commands
+il
+end
+# call dup2(open("output.txt",1), 1)
+# python gdb.execute("watch %s if debug_count >= %s" % (gdb.parse_and_eval("&QTNode::debug_count"),500))
+call dup2(open("input.txt", 0), 0)
+continue
+end
+
+# log
+
+r
+bt
+# q

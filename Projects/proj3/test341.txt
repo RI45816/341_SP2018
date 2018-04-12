@@ -1,0 +1,62 @@
+__Int341__ Constructor called
+__Int341__ Copy constructor called
+__Int341__ Destructor called
+__Int341__ Constructor called
+__Int341__ Copy constructor called
+__Int341__ Destructor called
+__Int341__ Constructor called
+__Int341__ Copy constructor called
+__Int341__ Destructor called
+End of push_back's
+__Int341__ Report usage:
+__Int341__   # of calls to constructor         = 3
+__Int341__   # of calls to copy constructor    = 3
+__Int341__   # of calls to destructor          = 3
+__Int341__   # of calls to assignment operator = 0
+
+Method #1
+__Int341__ Constructor called
+__Int341__ Assignment operator called
+__Int341__ Report usage:
+__Int341__   # of calls to constructor         = 4
+__Int341__   # of calls to copy constructor    = 3
+__Int341__   # of calls to destructor          = 3
+__Int341__   # of calls to assignment operator = 1
+
+Method #2
+__Int341__ Copy constructor called
+__Int341__ Report usage:
+__Int341__   # of calls to constructor         = 4
+__Int341__   # of calls to copy constructor    = 4
+__Int341__   # of calls to destructor          = 3
+__Int341__   # of calls to assignment operator = 1
+
+Method #3
+__Int341__ Copy constructor called
+__Int341__ Report usage:
+__Int341__   # of calls to constructor         = 4
+__Int341__   # of calls to copy constructor    = 5
+__Int341__   # of calls to destructor          = 3
+__Int341__   # of calls to assignment operator = 1
+
+Method #4
+__Int341__ Report usage:
+__Int341__   # of calls to constructor         = 4
+__Int341__   # of calls to copy constructor    = 5
+__Int341__   # of calls to destructor          = 3
+__Int341__   # of calls to assignment operator = 1
+
+Method #5
+__Int341__ Report usage:
+__Int341__   # of calls to constructor         = 4
+__Int341__   # of calls to copy constructor    = 5
+__Int341__   # of calls to destructor          = 3
+__Int341__   # of calls to assignment operator = 1
+
+End of main
+__Int341__ Destructor called
+__Int341__ Destructor called
+__Int341__ Destructor called
+__Int341__ Destructor called
+__Int341__ Destructor called
+__Int341__ Destructor called

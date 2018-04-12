@@ -26,9 +26,9 @@ using namespace std;
  *  Method: QTree::QTree()
  *   Descr: Default constructor for QTree
  */
-QTree::QTree() : m_root(new QTNode())
+QTree::QTree() : m_size(0), 
+        m_root(new QTNode())
 {
-    
 }
 
 
@@ -38,6 +38,7 @@ QTree::QTree() : m_root(new QTNode())
  */
 QTree::~QTree()
 {
+    delete m_root;
 }
 
 
@@ -62,9 +63,10 @@ bool QTree::add(const Point &pt, int data)
  */
 bool QTree::remove(const Point &pt)
 {
-    if (m_root->m_bounds.inBounds(pt)) {
-        bool empty;
-        return m_root->remove(pt,empty)
+    int data;
+    if (m_root->find(pt,data)) {
+        bool empty =true;
+        return m_root->remove(pt,empty);
     } else return false; // Point is not inbounds of m_root, and thus is not in the tree
 }
 

@@ -35,7 +35,11 @@ $(EXE): %: %.cpp $(OBJS)
 $(TEST): %: %.cpp $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) $< -o $@
 	
-	
+typescript:
+	g++ -I . -I ../../00Proj3/ p3test01.cpp QTree.cpp QTNode.cpp ../../00Proj3/BBox.cpp ../../00Proj3/Point.cpp -o t1.out
+	g++ -I . -I ../../00Proj3/ p3test02.cpp QTree.cpp QTNode.cpp ../../00Proj3/BBox.cpp ../../00Proj3/Point.cpp -o t2.out
+	valgrind ./t1.out
+	valgrind ./t2.out
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< 

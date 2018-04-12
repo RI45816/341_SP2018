@@ -77,9 +77,10 @@ QTNode *& QTNode::iterator::operator*() {
  *  Method: QTNode::QTNode()
  *   Descr: Default constructor for QTNode
  */
-QTNode::QTNode() : m_nodes{0}
-
-, m_isLeaf(false), m_point(0, 0), m_bounds(m_point, 1) {
+QTNode::QTNode() : m_isLeaf(false), m_point(0, 0), m_bounds(m_point, 1), m_data(0) {
+    // Initialize array of null points
+    for (int i = 0; i < QT_NUM_KIDS; i++)
+        m_nodes[i] = 0;
 }
 
 /*
@@ -87,6 +88,7 @@ QTNode::QTNode() : m_nodes{0}
  *   Descr: Destructor for QTNode
  */
 QTNode::~QTNode() {
+    for (int i = 0; i < QT_NUM_KIDS; i++) delete m_nodes[i];
 }
 
 /*
@@ -147,10 +149,7 @@ bool QTNode::add(const Point &pt, int data) {
                 if (pattern >> BB2 + i) BB2 += i;
 
             BB2 = 1 << BB2; // Turn BB2 into a power of 2
-            // 
-            m_bounds.resize(Point(BB2, BB2), pt2);
-            //            if (pt2.m_x == pt2.m_y && pt2.m_y == BB2)
-            //                dim = 1;
+            m_bounds.resize(Point(BB2, BB2), pt2); // Create a box big enough to store 
 
             m_data = data;
             m_point = pt2;
@@ -176,7 +175,7 @@ bool QTNode::add(const Point &pt, int data) {
             // New point is not within current bounding box
         } else {
             BBox oldBoundingBox = m_bounds; // Save the current bounding box
-            QTNode * oldNodes[4];
+            QTNode * oldNodes[QT_NUM_KIDS];
 
             // Clear subnodes
             for (int i = 0; i < QT_NUM_KIDS; i++) {
@@ -206,21 +205,114 @@ bool QTNode::add(const Point &pt, int data) {
 bool QTNode::remove(const Point &pt, bool &empty) {
     Point pt2 = pt; // Can't use const Point in functions
 
-    // No subtrees
-    if (isEmpty()) {
-        
-    } else {
-        int quadIndex = sortPoint(pt2); // Quadrent the point is in
-        
-        // There is a subtree at this quadrant
-        if (m_nodes[quadIndex]) {
-            bool empty;
-            if (m_nodes[quadIndex]->remove(pt,empty)) {
-                
+    // Looking for point
+    if (empty) {
+        int quad = sortPoint(pt2);
+
+        // Point is on leaf node just one level below root of tree
+        if (m_nodes[quad]->m_isLeaf) {
+            delete m_nodes[quad];
+            m_nodes[quad] = 0;
+
+            QTNode * newRoot[QT_NUM_KIDS] = {0}; // Change the root
+            bool replaced = false; // Wheter or not we have the new root
+
+            // Get number of non-empty quadrants
+            // numRemainingFull number of non-empty quadrants
+            // remainingIndex quadrant of the remaining node if there's only the deleted node and one other node
+            int numRemainingFull = 0, remainingIndex;
+            for (int i = 0; i < QT_NUM_KIDS; i++)
+                if (m_nodes[i]) {
+                    numRemainingFull++;
+                    remainingIndex = i;
+                }
+
+
+            // Only one node left after point was deleted
+            if (numRemainingFull == 1) {
+
+                // Bring up buried node
+                if (!m_isLeaf) {
+
+
+                    // Traverse tree to find either leaf node or subtree with multple subtrees
+                    for (QTNode ** curNode = m_nodes[remainingIndex]->m_nodes; !replaced; curNode = curNode[remainingIndex]->m_nodes)
+
+                        // Loop through subtrees quadrants
+                        for (int i = 0, numRemainingFull = 0; i < QT_NUM_KIDS; i++) {
+
+                            // Quadrant isn't empty
+                            if (curNode[i]) {
+
+                                // Mulitple occupied quadrants
+                                // Search over
+                                // Bring this subtree up
+                                if (numRemainingFull++) {
+
+                                    for (int j = 0; j < QT_NUM_KIDS; j++) {
+
+                                        newRoot[j] = curNode[j];
+                                        curNode[j] = 0;
+                                    }
+                                    replaced = true;
+                                    break;
+                                } else remainingIndex = i;
+                            }
+                        }
+
+                    // Delete the useless branch to nowhere
+                    delete m_nodes[remainingIndex];
+
+
+                    // Change root subtrees
+                    for (int i = 0; i < QT_NUM_KIDS; i++)
+                        m_nodes[i] = newRoot[i];
+
+                    m_bounds = m_nodes[remainingIndex]->m_bounds;
+                    m_bounds.grow();
+                }
             }
-        } else return false; // Quadrent is empty, meaning point is not in subtree
+        }// Point is buried deeper in the tree
+        else {
+            empty = false;
+            m_nodes[quad]->remove(pt, empty);
+        }
+
+    }// Recursing to find point 
+    else {
+        int quad = sortPoint(pt2);
+
+        // Point is on leaf node just one level below root of tree
+        if (m_nodes[quad]->m_isLeaf) {
+            delete m_nodes[quad];
+            m_nodes[quad] = 0;
+
+            // Get number of non-empty quadrants and leaves
+            // numRemainingFull number of non-empty quadrants
+            // remainingIndex quadrant of the remaining node if there's only the deleted node and one other node
+            // numRemainingLeaves is how many leaves remain at this level
+            int numRemainingFull = 0, remainingIndex, numRemainingLeaves;
+            for (int i = 0; i < QT_NUM_KIDS; i++)
+                if (m_nodes[i]) {
+                    if (m_nodes[i]->m_isLeaf)
+                        numRemainingLeaves++;
+                    numRemainingFull++;
+                    remainingIndex = i;
+                }
+
+            // If all that's left is a subtree with only one leaf, bring that leaf up
+            if (numRemainingFull == 1 && numRemainingLeaves) {
+                m_bounds = m_nodes[remainingIndex]->m_bounds;
+                m_data = m_nodes[remainingIndex]->m_data;
+                m_isLeaf = true;
+                m_point = m_nodes[remainingIndex]->m_point;
+                m_bounds.grow();
+                delete m_nodes[remainingIndex];
+                m_nodes[remainingIndex] = 0;
+            }
+        } else m_nodes[quad]->remove(pt, empty);
     }
-    
+    return true;
 }
 
 /*
@@ -281,8 +373,7 @@ int QTNode::findPoints(const BBox &region, std::vector<Point> &found) {
                 return 1;
             }
         }
-    }
-    // There are subtrees
+    }// There are subtrees
     else
         // Loop through all quadrants and recurse findPoints
         for (int i = 0; i < QT_NUM_KIDS; i++)
@@ -368,7 +459,7 @@ QTNode::iterator QTNode::end() {
  */
 bool QTNode::isEmpty() {
     int i = 0;
-    for (; !m_nodes[i] && i < QT_NUM_KIDS; i++);
+    for (i=0; !m_nodes[i] && i < QT_NUM_KIDS; i++);
 
     return i == QT_NUM_KIDS;
 }
@@ -405,6 +496,10 @@ int QTNode::sortPoint(Point & pt) {
  */
 QTNode::QTNode(Point &pt, int data, int dim) : m_point(pt), m_data(data), m_bounds(pt, dim >> 1), m_isLeaf(true) {
 
+    // Initialize array of null points
+    for (int i = 0; i < QT_NUM_KIDS; i++)
+        m_nodes[i] = 0;
+
     // Make sure the bounding box has the correct bottom left value
     if (m_bounds.m_dim)
         m_bounds.grow();
@@ -417,7 +512,11 @@ QTNode::QTNode(Point &pt, int data, int dim) : m_point(pt), m_data(data), m_boun
  *  Method: QTNode::QTNode()
  *   Descr:Create a sub-node
  */
-QTNode::QTNode(QTNode * nodes[], BBox bounds, int dim) : m_bounds(bounds), m_isLeaf(false) {
+QTNode::QTNode(QTNode * nodes[], BBox bounds, int dim) : m_bounds(bounds), m_isLeaf(false), m_point(0,0), m_data(0) {
+
+    // Initialize array of null points
+    for (int i = 0; i < QT_NUM_KIDS; i++)
+        m_nodes[i] = 0;
 
     if (m_bounds.m_dim != dim) {
         m_bounds.m_dim = dim >> 1;
@@ -427,3 +526,7 @@ QTNode::QTNode(QTNode * nodes[], BBox bounds, int dim) : m_bounds(bounds), m_isL
         for (int i = 0; i < QT_NUM_KIDS; i++)
             m_nodes[i] = nodes[i];
 }
+
+
+
+

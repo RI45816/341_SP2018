@@ -2,14 +2,18 @@ define cv
 d
 source -s gdb commands.txt
 end
-# python gdb.execute("watch *%s if SqList::debug_count >= %s && SqList::debug_count < %s" % (str(gdb.parse_and_eval("&SqList::debug_count")).split()[0],500,531))
+# python gdb.execute("watch *%s if QTNode::debug_count >= %s && QTNode::debug_count < %s" % (str(gdb.parse_and_eval("&QTNode::debug_count")).split()[0],500,531))
 # commands
 # pl
 # c
 # end
 
+define il
+info locals
+end
+
 define dc
-python gdb.execute("watch *%s if SqList::debug_count >= %s" % (str(gdb.parse_and_eval("&SqList::debug_count")).split()[0],$arg0))
+python gdb.execute("watch *%s if QTNode::debug_count >= %s" % (str(gdb.parse_and_eval("&QTNode::debug_count")).split()[0],$arg0))
 commands
 # silent
 # pl
@@ -33,7 +37,7 @@ set pagination off
 # tb 153
 # if i == 140
 # commands
-# b SqList::consolidate()
+# b QTNode::consolidate()
 # commands
 # p dump()
 # b 267
@@ -51,10 +55,10 @@ set pagination off
 # end
 # c
 # end
-# b SqList::removeAt(const Int341 &) if m_size == 140
-# b SqList::removeAt(int)
+# b QTNode::removeAt(const Int341 &) if m_size == 140
+# b QTNode::removeAt(int)
 # if m_size
-# b SqList::removeAt(int) if debug_count > 499
+# b QTNode::removeAt(int) if debug_count > 499
 # commands
 # commands
 # b 279
@@ -64,17 +68,17 @@ set pagination off
 # end
 # && it == *getSegmentFromIndex(13)
 # commands
-# b SqList.cpp:263 if *it == *getSegmentFromIndex(13)
+# b QTNode.cpp:263 if *it == *getSegmentFromIndex(13)
 # c
 # end
 # commands
 # b 274
 # c
 # end
-# b SqList::add(const Int341 &) if m_size
+# b QTNode::add(const Int341 &) if m_size
 # if data.m_data == 990
-# b SqList.cpp:96 if m_size == 5
-# b SqList.cpp:226 if m_size == 19
+# b QTNode.cpp:96 if m_size == 5
+# b QTNode.cpp:226 if m_size == 19
 # b 147
 # commands
 # silent
@@ -83,7 +87,7 @@ set pagination off
 # continue
 # end
 # b 175
-# b SqList.cpp:50
+# b QTNode.cpp:50
 # b 51
 # b 175
 # dc 1
@@ -125,7 +129,7 @@ set pagination off
 
 # p m_iList
 
-# b SqList::SqList()
+# b QTNode::QTNode()
 # commands
 # silent
 # c
@@ -138,12 +142,12 @@ set pagination off
 # btq
 # end
 
-# b SqList::~SqList()
+# b QTNode::~QTNode()
 # commands
 # nt
 # bt
 # end
-# tb SqList::~SqList()
+# tb QTNode::~QTNode()
 # commands
 # c
 # end
@@ -156,7 +160,7 @@ set pagination off
 # 0x60004f200
 
 
-# b SqList::SqList(SqList const&)
+# b QTNode::QTNode(QTNode const&)
 
 define nt
 python
@@ -190,8 +194,15 @@ end
 b main
 commands
 silent
+d
+
+# tb QTNode.cpp:243 if curNode[0] && curNode[0].m_bounds.m_dim == 2
+dc 3
+commands
+il
+end
 # call dup2(open("output.txt",1), 1)
-# python gdb.execute("watch %s if debug_count >= %s" % (gdb.parse_and_eval("&SqList::debug_count"),500))
+# python gdb.execute("watch %s if debug_count >= %s" % (gdb.parse_and_eval("&QTNode::debug_count"),500))
 call dup2(open("input.txt", 0), 0)
 continue
 end

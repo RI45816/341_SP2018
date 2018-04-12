@@ -30,7 +30,7 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    string cmd;
+    string cmd,far="far";
     int argX, argY, arg;
     QTree qt;
     while (!cin.eof()) {
@@ -38,9 +38,9 @@ int main(int argc, char** argv) {
         cout << "<cmd arg>: ";
         cin >> cmd;
 
-        if (~cmd.find("far")) {
+        if (~far.find(cmd)) {
             cin >> argX >> argY;
-            pt(argX, argY);
+            pt = Point(argX, argY);
         }
 
         if (cmd == "a") {
@@ -66,6 +66,14 @@ int main(int argc, char** argv) {
             qt.dump();
         else {
             cout << endl;
+            int i = 0;
+            for (QTNode::iterator it = qt.m_root->begin(); it!=qt.m_root->end(); it++,i++) 
+            {
+                QTNode * qtn = *it;
+                cout << i << endl;
+                if (qtn)
+                qtn->dump();
+            }
             break;
         }
     }

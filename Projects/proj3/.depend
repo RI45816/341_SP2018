@@ -1,0 +1,4 @@
+QTree.o: QTree.h Point.h BBox.h QTNode.h
+QTNode.o: QTNode.h Point.h BBox.h
+BBox.o: BBox.h Point.h
+Point.o: Point.h

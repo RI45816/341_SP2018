@@ -1,0 +1,2 @@
+g++ -Og -ggdb -c Point.cpp 
+g++ -Og -ggdb -c BBox.cpp 

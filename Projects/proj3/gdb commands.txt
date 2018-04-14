@@ -197,9 +197,20 @@ silent
 d
 
 # tb QTNode.cpp:243 if curNode[0] && curNode[0].m_bounds.m_dim == 2
-dc 3
+dc 2
+
+commands
+silent
+il
+undisp
+disp *curNode@4
+disp
+d
+dc 7
 commands
 il
+end
+c
 end
 # call dup2(open("output.txt",1), 1)
 # python gdb.execute("watch %s if debug_count >= %s" % (gdb.parse_and_eval("&QTNode::debug_count"),500))

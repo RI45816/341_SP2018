@@ -48,6 +48,8 @@ int main(int argc, char** argv) {
             qt.add(pt, arg);
             qt.dump();
         } else if (cmd == "r") {
+            bool empty = true;
+            cout << pt;
             if (qt.remove(pt))
                 cout << "remove(" << pt << ") was successful" << endl;
             else
@@ -64,6 +66,10 @@ int main(int argc, char** argv) {
 
         } else if (cmd == "d")
             qt.dump();
+     else if (cmd == "z") {
+         (&qt)->~QTree();
+         new (&qt) QTree();
+    }
         else {
             cout << endl;
             int i = 0;

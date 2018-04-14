@@ -26,29 +26,25 @@ using namespace std;
  *  Method: QTree::QTree()
  *   Descr: Default constructor for QTree
  */
-QTree::QTree() : m_size(0), 
-        m_root(new QTNode())
-{
+QTree::QTree() : m_size(0),
+m_root(new QTNode()) {
 }
-
 
 /*
  *  Method: QTree::~QTree()
  *   Descr: Destructor method for QTree
  */
-QTree::~QTree()
-{
+QTree::~QTree() {
     delete m_root;
+    m_root = 0;
 }
-
 
 /*
  *  Method: QTree::add()
  *   Descr: Add point to tree
  */
-bool QTree::add(const Point &pt, int data)
-{
-    if (m_root->add(pt,data)) {
+bool QTree::add(const Point &pt, int data) {
+    if (m_root->add(pt, data)) {
         m_size++;
         return !0;
     } else
@@ -56,51 +52,49 @@ bool QTree::add(const Point &pt, int data)
 
 }
 
-
 /*
  *  Method: QTree::remove()
  *   Descr: Remove point from tree
  */
-bool QTree::remove(const Point &pt)
-{
+bool QTree::remove(const Point &pt) {
     int data;
-    if (m_root->find(pt,data)) {
-        bool empty =true;
-        return m_root->remove(pt,empty);
+    if (m_root->find(pt, data)) {
+        bool empty = true;
+        m_root->remove(pt, empty);
+        if (!--m_size) {
+            delete m_root;
+            m_root = new QTNode();
+        }
+        return true;
     } else return false; // Point is not inbounds of m_root, and thus is not in the tree
 }
-
 
 /*
  *  Method: QTree::find()
  *   Descr: Get data for point in tree if point is in tree
  */
-bool QTree::find(const Point &pt, int &data)
-{
-    
+bool QTree::find(const Point &pt, int &data) {
+
     // If point is not in range of the root, obviously the point is not in the tree
     if (!m_root->m_bounds.inBounds(pt))
         return false;
     else
-    
-    return m_root->find(pt,data);
-}
 
+        return m_root->find(pt, data);
+}
 
 /*
  *  Method: QTree::findPoints()
  *   Descr: Get all the points within a bounding box
  */
-int QTree::findPoints(const BBox &region, std::vector<Point> &found)
-{
-    
+int QTree::findPoints(const BBox &region, std::vector<Point> &found) {
+
     // Bounding overlaps with box of root
     if (region.overlaps(m_root->m_bounds))
-        return m_root->findPoints(region,found); // Search tree for points
+        return m_root->findPoints(region, found); // Search tree for points
     else return 0; // No points found
-    
-}
 
+}
 
 /*
  *  Method: QTree::dump()

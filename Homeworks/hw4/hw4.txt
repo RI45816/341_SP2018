@@ -1,0 +1,81 @@
+Question 1:
+	Inductive Hypotheis (P(n)): leaves(T) = 2 * intNodes(T) + 1
+	Base case (P(1)):
+		The tree's root contains 3 leaf nodes
+		intNodes(T) = 1 // Tree only has root nodes
+		leaves(T) = 3 // Only 3 leaves in tree
+		
+		 // The equation proves true in the base case
+		leaves(T) = 2 * intNodes(T) + 1
+		3 = (2 * 1) + 1
+		3 = 2 +1
+		3 = 3
+		P(n) is true at P(1)
+		
+	Inductive case (P(n+1>=1)):
+		Assume P(n) is true
+		
+		// Since the case works in this particular instance, it should then work in the next case
+		leaves(T_n) = 2 * intNodes(T_n) + 1 => leaves(T_n+1) = 2 * intNodes(T_n+1) + 1
+		
+		intNodes(T_n+1) = intNodes(T_n) + leaves(T_n) // All the leaves in the tree of the previous become internal nodes in the new tree
+		leaves(T_n+1) = leaves(T_n) * 3 // Each leaf becomes an internal node with 3 leaves
+		
+		
+		// Substitute
+		// leaves(T_n) * 3 for leaves(T_n+1) in leaves(T_n+1)
+		// intNodes(T_n) + leaves(T_n) for intNodes(T_n+1) in intNodes(T_n) + leaves(T_n)
+		leaves(T_n+1) = intNodes(T_n) + leaves(T_n) <==> leaves(T_n) * 3 = 2(intNodes(T_n) + leaves(T_n)) + 1 
+		
+		leaves(T_n) * 3 = 2(intNodes(T_n) + leaves(T_n)) + 1
+		leaves(T_n) * 3 = 2 * intNodes(T_n) + 2 * leaves(T_n) + 1 // Distributed constant
+		leaves(T_n) * 3 = 2 * intNodes(T_n) + 1 + 2 * leaves(T_n) // Re-arranged addends
+		leaves(T_n) * 3 = leaves(T_n) + 2 * leaves(T_n) // leaves(T_n) = 2 * intNodes(T_n)
+		leaves(T_n) * 3 = 3 * leaves(T_n) // Combined like terms
+		leaves(T_n) * 3 = leaves(T_n) * 3 // True
+		
+	Thus, P(n) => P(n+1), therefore, by the principles of mathematical induction, P(n) is true for all n > 1
+
+Question 2:
+	Inductive Hypotheis Case (P(n)): reverse(preOrder(T)) = postOrder(T') // Reverse order preorder traversal of tree T is the as postorder traversal of tree T'
+		
+	Base case P(1):
+	T = {1}
+	T' = {1}
+	reverse(preOrder(T))=reverse(1)=1
+	postOrder(T) = 1
+	
+	Base case P(2):
+		T = {
+			1: {
+				left: 2,
+				right: 3
+			}
+		}
+		T' = {
+			1: {
+				left: 3,
+				right: 2
+			}
+		}
+		reverse(preOrder(T))
+		= reverse(preOrder(1))  // preOrder the root node
+		= reverse(1 preOrder(1.left) preOrder(1.right)) // print root node data then recurse into the left and then the right
+		= reverse(1 2 3) // Recursion finished, all data printed
+		= 3 2 1 // Reversed
+		
+		
+		postOrder(T') 
+		= postOrder(1) // postOrder root node
+		= postOrder(1.right) postOrder(1.left) 1 // Recurse into the right, then the left, then print 
+		= 3 2 1
+		
+	Inductive Case:
+		Assume P(n) is true
+		reverse(preOrder(T)) = reverse(preOrder(root)) = reverse(root preOrder(root.left) preOrder(root.right))
+		postOrder(T') = postOrder(root) = postOrder(root.right) postOrder(root.left) root
+		
+		reverse(root preOrder(root.left) preOrder(root.right)) = postOrder(root.right) postOrder(root.left) root // at all nodes with 2 children
+		
+		
+		

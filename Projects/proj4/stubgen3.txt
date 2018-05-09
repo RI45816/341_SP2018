@@ -1,0 +1,99 @@
+==> MinMaxHeap.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    MinMaxHeap.h
+ ** Project: CMSC 341 proj4, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/04/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the MinMaxHeap class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef MINMAXHEAP_H
+#define MINMAXHEAP_H
+
+template<typename T>
+class MinMaxHeap {
+public:
+    // default constructor
+    MinMaxHeap();
+
+    // copy constructor
+    MinMaxHeap(const MinMaxHeap& other);
+
+    // overloaded assignment operator
+    const MinMaxHeap& operator=(const MinMaxHeap& rhs);
+
+    // destructor
+    virtual ~MinMaxHeap();
+
+};
+
+#endif /* MINMAXHEAP_H */
+
+
+==> MinMaxHeap.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    MinMaxHeap.cpp
+ ** Project: CMSC 341 proj4, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/04/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the MinMaxHeap class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+#include <iostream>
+#include "MinMaxHeap.h"
+
+using namespace std;
+
+/*
+ *  Method: MinMaxHeap::MinMaxHeap()
+ *   Descr: Default constructor for MinMaxHeap
+ */
+template <typename T>
+MinMaxHeap::MinMaxHeap() {
+}
+
+/*
+ *  Method: MinMaxHeap::MinMaxHeap()
+ *   Descr: Copy constructor for MinMaxHeap
+ */
+template <typename T>
+MinMaxHeap::MinMaxHeap(const MinMaxHeap& other) {
+}
+
+/*
+ *  Method: MinMaxHeap::operator=()
+ *   Descr: Overloaded assignment operator for MinMaxHeap
+ */
+const MinMaxHeap & MinMaxHeap::operator=(const MinMaxHeap &rhs) {
+}
+
+/*
+ *  Method: MinMaxHeap::MinMaxHeap()
+ *   Descr: Destructor method for MinMaxHeap
+ */
+template <typename T>
+MinMaxHeap::~MinMaxHeap() {
+}   

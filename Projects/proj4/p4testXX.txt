@@ -1,0 +1,2660 @@
+Passed sanityCheck()
+Passed check against multiset
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 18 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 18 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 18 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 31 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 31 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 35 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 35 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 35 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 55 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 55 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 55 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 55 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 90 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 90 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 90 from MinMaxHeap
+Passed sanityCheck()
+Passed sanityCheck()
+Passed check against multiset
+Removed max item 100 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 100 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 100 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Passed sanityCheck()
+Passed check against multiset
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 0 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 1 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 2 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 3 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 4 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 5 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 6 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 7 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 8 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 9 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 10 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 11 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 12 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 13 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 14 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 15 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 16 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 17 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 18 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 18 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 18 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 19 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 20 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 21 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 22 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 23 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 24 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 25 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 26 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 27 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 28 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 29 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 30 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 31 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 31 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 31 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 31 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 32 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 33 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 34 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 35 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 35 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 35 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 36 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 37 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 38 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 39 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 40 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 41 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 42 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 43 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 44 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 45 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 46 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 77 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 77 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed min item 89 from MinMaxHeap
+Passed sanityCheck()
+Passed sanityCheck()
+Passed check against multiset
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 99 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 98 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 97 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 96 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 95 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 94 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 94 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 94 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 94 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 94 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 94 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 93 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 92 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 91 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 90 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 90 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 90 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 90 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 89 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 88 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 87 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 86 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 85 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 84 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 83 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 82 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 81 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 80 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 79 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 78 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 77 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 77 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 77 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 77 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 76 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 75 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 74 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 73 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 72 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 71 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 70 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 69 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 68 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 67 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 66 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 65 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 64 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 63 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 62 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 61 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 60 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 59 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 58 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 57 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 56 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 55 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 54 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 53 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 52 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 51 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 50 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 49 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 48 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 47 from MinMaxHeap
+Passed sanityCheck()
+Removed max item 47 from MinMaxHeap
+Passed sanityCheck()
+Passed sanityCheck()
+Passed check against multiset

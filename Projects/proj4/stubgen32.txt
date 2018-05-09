@@ -1,0 +1,406 @@
+==> MinMaxHeap.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    MinMaxHeap.h
+ ** Project: CMSC 341 proj4, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/04/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the MinMaxHeap class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef MINMAXHEAP_H
+#define MINMAXHEAP_H
+
+
+#define TWIN 2
+
+enum {MIN,MAX};
+
+
+template<typename T>
+struct HeapItem {
+    int m_twinIndex; // Store index of twin item in other heap
+    T m_item; // The actual item being stored
+
+    HeapItem(T item,int index) : m_item(item), m_twinIndex(index) {
+    }
+
+
+};
+
+template<typename T>
+class MinMaxHeap {
+public:
+
+//    typedef bool (*itemCompare)(HeapItem<T>*,HeapItem<T>*);
+
+    class Heap {
+    public:
+        // Constructor for Heap
+        Heap(int capacity,itemCompare compare);
+
+        // prints out the contents of the heap including the positions of each key in the min-heap and the max-heap along with recorded position of its "twin"
+        void dump();
+
+        // adds the item given in the parameter to the heap
+        void insert(const T& data);
+
+
+        // swaps two elements within a heap
+        void swap(HeapItem<T> * hi1, HeapItem<T> * hi2,int index);
+        
+        // determines which item should be compared while percolating down
+        HeapItem<T> compareItems(HeapItem<T> * hi1,HeapItem<T> * hi2);
+        
+        // Give heap access to its twin
+        void setTwin(Heap* twin);
+        
+        // Determine most significant bit
+        unsigned int findMSBSet(unsigned int pattern);
+        
+        // Retrieve heap item at index
+        void getElements() const;
+        
+        
+        
+ 
+    private:
+        HeapItem<T> ** m_elements; // Store the elements
+        Heap * m_twin; // The min (or max) heap's twin heap
+        itemCompare m_compare; // Comparison function to be used to sort heap
+        int m_size = 0;
+    };
+    // default constructor
+    MinMaxHeap(int capacity);
+
+    // copy constructor
+    MinMaxHeap(const MinMaxHeap<T>& other);
+
+    // overloaded assignment operator
+    const MinMaxHeap<T>& operator=(const MinMaxHeap<T>& rhs);
+
+    // destructor
+    ~MinMaxHeap();
+
+    // returns the number of items in the min-max heap
+    int size();
+
+    // adds the item given in the parameter to the min-max heap
+    void insert(const T& data);
+
+    // removes the smallest item in the min-max heap and returns the key value of the deleted item
+    T deleteMin();
+
+    // removes the largest item in the min-max heap and returns the key value of the deleted item
+    T deleteMax();
+
+    // prints out the contents of the min-max heap including the positions of each key in the min-heap and the max-heap along with recorded position of its "twin"
+    void dump();
+
+    // Retrieve the item at the requested pos and its index in the twin heap
+    void locateMin(int pos, T& data, int& index);
+
+    // Retrieve the item at the requested pos and its index in the twin heap
+    void locateMax(int pos, T& data, int& index);
+    
+
+
+private:
+    Heap * m_heaps[TWIN]; // Store the heaps
+    int m_size; // Current size of the heap
+    int m_capacity; // Maximum amount of items heap can store
+    static int debug_count;
+
+};
+
+//    
+//    // Determines whether or not the first item is greater than the second
+//    template <typename T>
+//    bool greaterThan(HeapItem<T> * hi1, HeapItem<T> * hi2);
+//    
+//    // Determines whether or not the first item is less than the second
+//    template <typename T>
+//    bool lesserThan(HeapItem<T> * hi1, HeapItem<T> * hi2);
+    
+    
+
+#include "MinMaxHeap.cpp"
+#endif /* MINMAXHEAP_H */
+==> MinMaxHeap.cpp <==
+///*
+// * To change this license header, choose License Headers in Project Properties.
+// * To change this template file, choose Tools | Templates
+// * and open the template in the editor.
+// */
+//
+///*****************************************
+// ** File:    MinMaxHeap.cpp
+// ** Project: CMSC 341 proj4, Spring 2018
+// ** Author:  Uzoma Uwanamodo
+// ** Date:    05/04/2018
+// ** E-mail:  uu3@umbc.edu
+// ** 
+// ** This file contains the definition for the MinMaxHeap class.
+// ** 
+// ** 
+// ** 
+// ** 
+// *********************************************/
+//#ifndef MINMAXHEAP_CPP
+//#define MINMAXHEAP_CPP
+//
+//
+//#include <iostream>
+//#include "MinMaxHeap.h"
+//
+//using namespace std;
+//
+//template <typename T>
+//int MinMaxHeap<T>::debug_count = 0;
+///*
+// *  Method: MinMaxHeap<T>::MinMaxHeap()
+// *   Descr: Default constructor for MinMaxHeap
+// */
+//template <typename T>
+//MinMaxHeap<T>::MinMaxHeap(int capacity) : m_size(0),m_capacity(capacity) {
+//    cout << debug_count++ << endl;
+//    m_heaps[MAX] = new Heap(capacity, greaterThan);
+//    m_heaps[MIN] = new Heap(capacity, lesserThan);
+//    for (int i = 0;i<TWIN;i++)
+//        m_heaps[i]->setTwin(m_heaps[i^1]);
+//}
+//
+///*
+// *  Method: MinMaxHeap<T>::MinMaxHeap()
+// *   Descr: Copy constructor for MinMaxHeap
+// */
+//template <typename T>
+//MinMaxHeap<T>::MinMaxHeap(const MinMaxHeap<T>& other) {
+//}
+//
+///*
+// *  Method: MinMaxHeap<T>::operator=()
+// *   Descr: Overloaded assignment operator for MinMaxHeap
+// */
+//template <typename T>
+//const MinMaxHeap<T> & MinMaxHeap<T>::operator=(const MinMaxHeap<T> &rhs) {
+//}
+//
+///*
+// *  Method: MinMaxHeap<T>::MinMaxHeap()
+// *   Descr: Destructor method for MinMaxHeap
+// */
+//template <typename T>
+//MinMaxHeap<T>::~MinMaxHeap() {
+//}
+//
+///*------------------------------------------------------------------------------*/
+//
+///*
+// *  Method: MinMaxHeap::Heap::Heap()
+// *   Descr: Constructor for Heap
+// */
+//template <typename T>
+//MinMaxHeap<T>::Heap::Heap(int capacity, itemCompare compare) : m_compare(compare), m_elements(new HeapItem<T> * [1 << (this->findMSBSet(capacity))]) {
+//}
+//
+///*
+// *  Method: MinMaxHeap::Heap::dump()
+// *   Descr: Print out all the items in the heap
+// */
+//template <typename T>
+//void MinMaxHeap<T>::Heap::dump() {
+//    for (int i=1; i<=m_size; i++) {
+//        printf("Heap[%i] = (", i);
+//        cout << m_elements[i]->m_item;
+//        printf(",%i)\n", m_elements[i]->m_twinIndex);
+//    }
+//}
+//
+///*
+// *  Method: MinMaxHeap::Heap::insert()
+// *   Descr: Insert an item into the heap
+// */
+//template <typename T>
+//void MinMaxHeap<T>::Heap::insert(const T &data) {
+//    static int i;
+////    printf("i=%i\n",i);
+//    cout << debug_count++ << endl;
+//    m_elements[++m_size] = new HeapItem<T>(data, (m_size+1>m_twin->m_size || !i) ? m_size+1 : i);
+//    if (m_size == 1) return;
+//    
+//    for (i = m_size; i>1 && m_compare(m_elements[i],m_elements[i>>1]);i>>=1) swap(m_elements[i],m_elements[i>>1],i);
+////    printf("i3=%i\n",i);
+//    cout << debug_count++ << endl;
+//}
+//
+///*
+// *  Method: MinMaxHeap::Heap::swap()
+// *   Descr: Take two variables and switch them
+// */
+//template <typename T>
+//void MinMaxHeap<T>::Heap::swap(HeapItem<T> * hi1, HeapItem<T>  * hi2, int index) {
+//    cout << debug_count++ << endl; 
+////        printf("i2=%i\n",index);
+//
+//    HeapItem<T> hi3 = *hi1;
+//    
+//    // Swap the index in the heap so they keep track of each other
+//    m_twin->m_elements[hi2->m_twinIndex]->m_twinIndex = index;
+//    if (m_size==m_twin->m_size) 
+//    m_twin->m_elements[hi1->m_twinIndex]->m_twinIndex = index >> 1;
+//    *hi1 = *hi2;
+//    *hi2 = hi3;
+//}
+//
+///*
+// *  Method: MinMaxHeap::Heap::compareItems()
+// *   Descr: Get the min or max of the two items depending on function in m_compare
+// */
+//template <typename T>
+//HeapItem<T> MinMaxHeap<T>::Heap::compareItems(HeapItem<T> * hi1, HeapItem<T> * hi2) {
+//    HeapItem<T> dummy;
+//
+//    return dummy;
+//}
+// /* 
+//  *  Method: MinMaxHeap::Heap::setTwin()
+//  *  Descr: Give heap a pointer to its twin
+// */
+//template <typename T>
+//void MinMaxHeap<T>::Heap::setTwin(Heap* twin) {
+//    m_twin = twin;    
+//}
+//
+///*
+// *  Method: MinMaxHeap::size()
+// *   Descr: Return number of elements in heap
+// */
+//template <typename T>
+//int MinMaxHeap<T>::size() {
+//    return m_size;
+//}
+//
+///*
+// *  Method: MinMaxHeap::insert()
+// *   Descr: Insert an item into the heaps
+// */
+//template <typename T>
+//void MinMaxHeap<T>::insert(const T &data) {
+//    if(++m_size == m_capacity)
+//        throw out_of_range("The heap has reached its capacity");
+//    for (int i = 0;i<TWIN;i++)
+//        m_heaps[i]->insert(data);
+//}
+//
+///*
+// *  Method: MinMaxHeap::deleteMin()
+// *   Descr: Delete the smallest item from both heaps
+// */
+//template <typename T>
+//T MinMaxHeap<T>::deleteMin() {
+//    T dummy;
+//
+//    return dummy;
+//}
+//
+///*
+// *  Method: MinMaxHeap::deleteMax()
+// *   Descr: Delete the largest item from both heaps
+// */
+//template <typename T>
+//T MinMaxHeap<T>::deleteMax() {
+//    T dummy;
+//
+//    return dummy;
+//}
+//
+///*
+// *  Method: MinMaxHeap::dump()
+// *   Descr: Print out the contents of the twin heaps
+// */
+//template <typename T>
+//void MinMaxHeap<T>::dump() {
+//    cout << debug_count++ << endl;
+//    cout << "... MinMaxHeap::dump() ..." << endl;
+//cout << "------------Min Heap------------" << endl;
+//printf("size = %i, capacity = %i\n",m_size,m_capacity);
+//m_heaps[MIN]->dump();
+//cout << "------------Max Heap------------" << endl;
+//printf("size = %i, capacity = %i\n",m_size,m_capacity);
+//m_heaps[MAX]->dump();
+//
+//}
+//
+///*
+// *  Method: MinMaxHeap::locateMin()
+// *   Descr: Locate the smallest value in the Max heap
+// */
+//template <typename T>
+//void MinMaxHeap<T>::locateMin(int pos, T &data, int &index) {
+//    data = m_heaps[MIN]
+//}
+//
+///*
+// *  Method: MinMaxHeap::locateMax()
+// *   Descr: Locate the largest value in the Min heap
+// */
+//template <typename T>
+//void MinMaxHeap<T>::locateMax(int pos, T &data, int &index) {
+//}
+//
+//
+///*------------------------------------------------------------------------------*/
+//
+//// Determine most significant bit
+//
+//template <typename T>
+//unsigned int MinMaxHeap<T>::Heap::findMSBSet(unsigned int pattern) {
+//    int bit = 0;
+//    if (pattern) {
+//        // Do binary search for highest-order differing bit
+//        for (int i = 16; i; i >>= 1) {
+//            if (pattern >> bit + i) bit += i;
+//        }
+//        bit++; // this maps to range 1..32
+//    }
+//    return bit;
+//}
+//
+//HeapItem<T>** Heap::getElements() const {
+//    return m_elements;
+//}
+//
+//
+///*------------------------------------------------------------------------------*/
+//
+//
+//// Determines whether or not the first item is greater than the second
+//
+//template <typename T>
+//bool greaterThan(HeapItem<T> * hi1, HeapItem<T> * hi2) {
+//    return hi1->m_item > hi2->m_item;
+//}
+//
+//// Determines whether or not the first item is less than the second
+//
+//template <typename T>
+//bool lesserThan(HeapItem<T> * hi1, HeapItem<T> * hi2) {
+//    return hi1->m_item < hi2->m_item;
+//}
+//
+//#endif  // MINMAXHEAP_CPP	/*------------------------------------------------------------------------------*/
+//
+	/*------------------------------------------------------------------------------*/
+

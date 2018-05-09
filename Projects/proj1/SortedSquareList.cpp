@@ -30,7 +30,7 @@ using namespace std;
  *   Descr: Default constructor for SortedSquareList
  */
 SortedSquareList::SortedSquareList() : m_capacity(2), m_size(0), m_start(0), m_end(0) {
-    m_cols = new SSLColumn * [m_capacity];
+m_cols = new SSLColumn * [m_capacity];
     m_colInfo = new int[m_capacity * 2 + 1]; // Stores highest number and series of size of columns
 
     // Initiailize m_cols

@@ -1,0 +1,286 @@
+==> MinMaxHeap.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    MinMaxHeap.h
+ ** Project: CMSC 341 proj4, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/04/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the MinMaxHeap class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef MINMAXHEAP_H
+#define MINMAXHEAP_H
+
+template<typename T>
+class MinMaxHeap {
+public:
+    // default constructor
+    MinMaxHeap();
+
+    // copy constructor
+    MinMaxHeap(const MinMaxHeap<T>& other);
+
+    // overloaded assignment operator
+    const MinMaxHeap<T>& operator=(const MinMaxHeap<T>& rhs);
+
+    // destructor
+    ~MinMaxHeap();
+
+    // Returns the number of items in the min-max heap
+    size();
+
+    // Adds the item given in the parameter to the min-max heap
+    insert(const T& data);
+
+    // Removes the smallest item in the min-max heap and returns the key value of the deleted item
+    deleteMin();
+
+    // Removes the largest item in the min-max heap and returns the key value of the deleted item
+    deleteMax();
+
+    // Prints out the contents of the min-max heap including the positions of each key in the min-heap and the max-heap along with recorded position of its "twin"
+    dump();
+
+    // f
+    locateMax(int pos, T& data, int& index);
+
+    // f
+    locateMin(int pos, T& data, int& index);
+
+
+
+};
+
+#endif /* MINMAXHEAP_H */
+
+
+==> NoCopyString.h <==
+#ifndef _NOCOPYSTRING_H_
+#define _NOCOPYSTRING_H_
+
+#include <iostream>
+
+class NoCopyString {
+public:
+   NoCopyString() ;
+   NoCopyString(const char *) ;
+
+   bool operator<  (const NoCopyString& other) const ;
+   bool operator<= (const NoCopyString& other) const ;
+   bool operator== (const NoCopyString& other) const ;
+   bool operator!= (const NoCopyString& other) const ;
+   bool operator>  (const NoCopyString& other) const ;
+   bool operator>= (const NoCopyString& other) const ;
+
+   const char *m_str ;
+
+} ;
+
+
+std::ostream& operator<< (std::ostream& sout, const NoCopyString& s) ;
+
+#endif
+
+==> MinMaxHeap.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    MinMaxHeap.cpp
+ ** Project: CMSC 341 proj4, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/04/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the MinMaxHeap class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+#include <iostream>
+#include "MinMaxHeap.h"
+
+using namespace std;
+
+/*
+ *  Method: MinMaxHeap<T>::MinMaxHeap()
+ *   Descr: Default constructor for MinMaxHeap
+ */
+template <typename T>
+MinMaxHeap<T>::MinMaxHeap() {
+}
+
+/*
+ *  Method: MinMaxHeap<T>::MinMaxHeap()
+ *   Descr: Copy constructor for MinMaxHeap
+ */
+template <typename T>
+MinMaxHeap<T>::MinMaxHeap(const MinMaxHeap<T>& other) {
+}
+
+/*
+ *  Method: MinMaxHeap<T>::operator=()
+ *   Descr: Overloaded assignment operator for MinMaxHeap
+ */
+const MinMaxHeap<T> & MinMaxHeap<T>::operator=(const MinMaxHeap<T> &rhs) {
+}
+
+/*
+ *  Method: MinMaxHeap<T>::MinMaxHeap()
+ *   Descr: Destructor method for MinMaxHeap
+ */
+template <typename T>
+MinMaxHeap<T>::~MinMaxHeap() {
+}
+
+/*
+ *  Method: MinMaxHeap::size()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::size() {
+}
+
+/*
+ *  Method: MinMaxHeap::insert()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::insert(const T &data) {
+}
+
+/*
+ *  Method: MinMaxHeap::deleteMin()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::deleteMin() {
+}
+
+/*
+ *  Method: MinMaxHeap::deleteMax()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::deleteMax() {
+}
+
+/*
+ *  Method: MinMaxHeap::dump()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::dump() {
+}
+
+/*
+ *  Method: MinMaxHeap::locateMax()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::locateMax(int pos, T &data, int &index) {
+}
+
+/*
+ *  Method: MinMaxHeap::locateMin()
+ *   Descr: 
+ */
+template <typename T>
+MinMaxHeap<T>::locateMin(int pos, T &data, int &index) {
+}
+
+/*
+ *  Method: MinMaxHeap::operator=()
+ *   Descr: 
+ */
+template <typename T>
+const MinMaxHeap<T> & MinMaxHeap<T>::operator=(const MinMaxHeap<T> &rhs)
+{
+}
+
+
+/*------------------------------------------------------------------------------*/
+/*
+ *  Method: MinMaxHeap::operator=()
+ *   Descr: 
+ */
+template <typename T>
+const MinMaxHeap<T> & MinMaxHeap<T>::operator=(const MinMaxHeap<T> &rhs)
+{
+}
+
+
+/*
+ *  Method: MinMaxHeap::operator=()
+ *   Descr: 
+ */
+template <typename T>
+const MinMaxHeap<T> & MinMaxHeap<T>::operator=(const MinMaxHeap<T> &rhs)
+{
+}
+
+
+
+==> NoCopyString.cpp <==
+#include "NoCopyString.h"
+#include <string.h>
+#include <stdlib.h>
+
+NoCopyString::NoCopyString() {
+   m_str = NULL ;
+}
+
+NoCopyString::NoCopyString(const char *str) {
+   m_str = str ;
+}
+
+bool NoCopyString::operator<  (const NoCopyString& other) const {
+   if (strcmp(m_str, other.m_str) <  0) return true ;
+   return false ;
+}
+
+bool NoCopyString::operator<= (const NoCopyString& other) const {
+   if (strcmp(m_str, other.m_str) <= 0) return true ;
+   return false ;
+}
+
+bool NoCopyString::operator== (const NoCopyString& other) const {
+   if (strcmp(m_str, other.m_str) == 0) return true ;
+   return false ;
+}
+
+bool NoCopyString::operator!= (const NoCopyString& other) const {
+   if (strcmp(m_str, other.m_str) != 0) return true ;
+   return false ;
+}
+
+bool NoCopyString::operator>= (const NoCopyString& other) const {
+   if (strcmp(m_str, other.m_str) >= 0) return true ;
+   return false ;
+}
+
+bool NoCopyString::operator>  (const NoCopyString& other) const {
+   if (strcmp(m_str, other.m_str) >  0) return true ;
+   return false ;
+}
+
+
+std::ostream& operator<< (std::ostream& sout, const NoCopyString& s) {
+   sout << s.m_str ;
+   return sout ;
+}

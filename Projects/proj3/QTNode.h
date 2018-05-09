@@ -50,6 +50,7 @@ public:
     QTNode * m_nodes[QT_NUM_KIDS];   // Store the QTNodes for top left, top right, bottom left, and bottom right
     bool isEmpty(); // Return true if there are no sub-nodes
     bool m_isLeaf; // True if current node is a leaf
+    bool m_isNull;
     int sortPoint(Point &pt); // Return the index of the sub-node to sort the point into
     QTNode(Point &pt,int data, int dim); // Create a new leaf node and set the data accordingly
     QTNode(QTNode * nodes[], BBox bounds,int dim); // Create a new subnode

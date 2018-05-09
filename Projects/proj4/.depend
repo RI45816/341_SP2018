@@ -1,0 +1,2 @@
+MinMaxHeap.o: MinMaxHeap.h MinMaxHeap.cpp MinMaxHeap.h
+NoCopyString.o: NoCopyString.h

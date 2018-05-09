@@ -77,7 +77,7 @@ QTNode *& QTNode::iterator::operator*() {
  *  Method: QTNode::QTNode()
  *   Descr: Default constructor for QTNode
  */
-QTNode::QTNode() : m_isLeaf(false), m_point(0, 0), m_bounds(m_point, 1), m_data(0) {
+QTNode::QTNode() : m_isLeaf(false), m_point(0, 0), m_bounds(m_point, 1), m_data(0),m_nodes() {
     // Initialize array of null points
     for (int i = 0; i < QT_NUM_KIDS; i++)
         m_nodes[i] = 0;
@@ -386,6 +386,7 @@ int QTNode::findPoints(const BBox &region, std::vector<Point> &found) {
  *   Descr: Print out contents of entire subtree
  */
 void QTNode::dump() {
+    
     // If the current node is a leaf, print out the leaf info
     if (m_isLeaf)
         cout << "[QTNode bounds=" << m_bounds << " is LEAF: pt=" << m_point << ", data=" << m_data << "]" << endl;
@@ -456,10 +457,12 @@ QTNode::iterator QTNode::end() {
  *   Descr: Determine whether or not there are sub-nodes
  */
 bool QTNode::isEmpty() {
-    int i = 0;
-    for (; !m_nodes[i] && i < QT_NUM_KIDS; i++);
-
-    return i == QT_NUM_KIDS;
+    
+    for (int i = 0; i < QT_NUM_KIDS; i++) {
+        if (m_nodes[i])
+            return false;
+    }
+    return true;
 }
 
 /*
@@ -492,7 +495,7 @@ int QTNode::sortPoint(Point & pt) {
  *  Method: QTNode::QTNode()
  *   Descr:Create a leaf node at a certain dimension 
  */
-QTNode::QTNode(Point &pt, int data, int dim) : m_point(pt), m_data(data), m_bounds(pt, dim >> 1), m_isLeaf(true) {
+QTNode::QTNode(Point &pt, int data, int dim) : m_point(pt), m_data(data), m_bounds(pt, dim >> 1), m_isLeaf(true),m_nodes() {
 
     // Initialize array of null points
     for (int i = 0; i < QT_NUM_KIDS; i++)
@@ -510,7 +513,7 @@ QTNode::QTNode(Point &pt, int data, int dim) : m_point(pt), m_data(data), m_boun
  *  Method: QTNode::QTNode()
  *   Descr:Create a sub-node
  */
-QTNode::QTNode(QTNode * nodes[], BBox bounds, int dim) : m_bounds(bounds), m_isLeaf(false), m_point(0, 0), m_data(0) {
+QTNode::QTNode(QTNode * nodes[], BBox bounds, int dim) : m_bounds(bounds), m_isLeaf(false), m_point(0, 0), m_data(0),m_nodes() {
 
     // Initialize array of null points
     for (int i = 0; i < QT_NUM_KIDS; i++)
@@ -526,5 +529,50 @@ QTNode::QTNode(QTNode * nodes[], BBox bounds, int dim) : m_bounds(bounds), m_isL
 }
 
 
+
+
+/*
+ *  Method: QTNode::iterator::operator++()
+ *   Descr: 
+ */
+iterator & QTNode::iterator::operator++()
+{
+}
+
+
+/*
+ *  Method: QTNode::iterator::operator++()
+ *   Descr: 
+ */
+iterator QTNode::iterator::operator++(int dummy)
+{
+    iterator dummy;
+
+    return dummy;
+}
+
+
+/*
+ *  Method: QTNode::begin()
+ *   Descr: 
+ */
+iterator QTNode::begin()
+{
+    iterator dummy;
+
+    return dummy;
+}
+
+
+/*
+ *  Method: QTNode::end()
+ *   Descr: 
+ */
+iterator QTNode::end()
+{
+    iterator dummy;
+
+    return dummy;
+}
 
 

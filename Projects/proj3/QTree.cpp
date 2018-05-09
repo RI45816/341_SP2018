@@ -26,8 +26,7 @@ using namespace std;
  *  Method: QTree::QTree()
  *   Descr: Default constructor for QTree
  */
-QTree::QTree() : m_size(0),
-m_root(new QTNode()) {
+QTree::QTree() : m_root(new QTNode()),m_size(0) {
 }
 
 /*
@@ -104,7 +103,10 @@ void QTree::dump() {
     cout << "============================================================" << endl;
     cout << "START Dump of quadtree" << endl;
     cout << "------------------------------------------------------------" << endl;
+    if (m_size)
     m_root->dump();
+    else
+        cout << "[NULL]" << endl;
     cout << "------------------------------------------------------------" << endl;
     cout << "END Dump of quadtree" << endl;
     cout << "============================================================" << endl;

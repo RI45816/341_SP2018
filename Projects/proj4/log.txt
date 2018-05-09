@@ -1,0 +1,319 @@
+Hardware watchpoint 1: *0x100404060
+Breakpoint 2 at 0x10040130e: file p4test04.cpp, line 211.
+[New Thread 31676.0x4464]
+[New Thread 31676.0x6768]
+[New Thread 31676.0x3f54]
+[New Thread 31676.0x2c8c]
+[New Thread 31676.0x1980]
+[New Thread 31676.0x7140]
+$1 = 1
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x0000000100402e27 in MinMaxHeap<int>::Heap::swap (this=this@entry=0x600064f70, hi1=0x600069470, hi2=0x6000691d0, index=11, index2=5) at MinMaxHeap.cpp:113
+113	    cout << debug_count++ << endl; 
+$2 = {
+  m_elements = 0x600064fa0, 
+  m_twin = 0x600066fb0, 
+  m_compare = 0x100401c40 <greaterThan<int>(HeapItem<int>*, HeapItem<int>*)>, 
+  m_size = 11
+}
+$3 = {
+  m_elements = 0x600066fe0, 
+  m_twin = 0x600064f70, 
+  m_compare = 0x100401c30 <lesserThan<int>(HeapItem<int>*, HeapItem<int>*)>, 
+  m_size = 11
+}
+this[1] = (74,7)
+this[2] = (54,10)
+this[3] = (63,6)
+this[4] = (41,9)
+this[5] = (20,4)
+this[6] = (7,1)
+this[7] = (46,8)
+this[8] = (8,3)
+this[9] = (8,2)
+this[10] = (12,5)
+this[11] = (82,11)
+
+twin[1] = (74,7)
+twin[2] = (54,10)
+twin[3] = (63,6)
+twin[4] = (41,9)
+twin[5] = (20,4)
+twin[6] = (7,1)
+twin[7] = (46,8)
+twin[8] = (8,3)
+twin[9] = (8,2)
+twin[10] = (12,5)
+twin[11] = (82,11)
+$4 = {{
+    m_twinIndex = 11, 
+    m_item = 82
+  }, {
+    m_twinIndex = 4, 
+    m_item = 20
+  }}
+this = 0x600064f70
+hi1 = 0x600069470
+hi2 = 0x6000691d0
+index = 11
+index2 = 5
+hi3 = <optimized out>
+#0  0x0000000100402e27 in MinMaxHeap<int>::Heap::swap (this=this@entry=0x600064f70, hi1=0x600069470, hi2=0x6000691d0, index=11, index2=5) at MinMaxHeap.cpp:113
+113	    cout << debug_count++ << endl; 
+#0  0x0000000100402e27 in MinMaxHeap<int>::Heap::swap (this=this@entry=0x600064f70, hi1=0x600069470, hi2=0x6000691d0, index=11, index2=5) at MinMaxHeap.cpp:113
+#1  0x0000000100402fe5 in MinMaxHeap<int>::Heap::insert (this=0x600064f70, data=@0xffffcb2c: 82) at MinMaxHeap.cpp:103
+#2  0x0000000100403134 in MinMaxHeap<int>::insert (this=this@entry=0xffffcb60, data=@0xffffcb2c: 82) at MinMaxHeap.cpp:214
+#3  0x00000001004013af in main () at p4test04.cpp:224
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x0000000100402efd in MinMaxHeap<int>::Heap::insert (this=0x600066fb0, data=@0xffffcb2c: 11) at MinMaxHeap.cpp:98
+98	    cout << debug_count++ << endl;
+$5 = {
+  m_elements = 0x600066fe0, 
+  m_twin = 0x600064f70, 
+  m_compare = 0x100401c30 <lesserThan<int>(HeapItem<int>*, HeapItem<int>*)>, 
+  m_size = 13
+}
+$6 = {
+  m_elements = 0x600064fa0, 
+  m_twin = 0x600066fb0, 
+  m_compare = 0x100401c40 <greaterThan<int>(HeapItem<int>*, HeapItem<int>*)>, 
+  m_size = 13
+}
+this[1] = (7,12)
+this[2] = (8,9)
+this[3] = (8,8)
+this[4] = (20,11)
+this[5] = (12,10)
+this[6] = (37,13)
+this[7] = (74,2)
+this[8] = (46,7)
+this[9] = (41,4)
+this[10] = (54,5)
+this[11] = (82,1)
+this[12] = (63,3)
+this[13] = (39,6)
+
+twin[1] = (7,12)
+twin[2] = (8,9)
+twin[3] = (8,8)
+twin[4] = (20,11)
+twin[5] = (12,10)
+twin[6] = (37,13)
+twin[7] = (74,2)
+twin[8] = (46,7)
+twin[9] = (41,4)
+twin[10] = (54,5)
+twin[11] = (82,1)
+twin[12] = (63,3)
+twin[13] = (39,6)
+this = 0x600066fb0
+data = @0xffffcb2c: 11
+i = 6
+#0  0x0000000100402efd in MinMaxHeap<int>::Heap::insert (this=0x600066fb0, data=@0xffffcb2c: 11) at MinMaxHeap.cpp:98
+98	    cout << debug_count++ << endl;
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x0000000100402e27 in MinMaxHeap<int>::Heap::swap (this=this@entry=0x600064f70, hi1=0x600069320, hi2=0x600069160, index=8, index2=4) at MinMaxHeap.cpp:113
+113	    cout << debug_count++ << endl; 
+$7 = {
+  m_elements = 0x600064fa0, 
+  m_twin = 0x600066fb0, 
+  m_compare = 0x100401c40 <greaterThan<int>(HeapItem<int>*, HeapItem<int>*)>, 
+  m_size = 69
+}
+$8 = {
+  m_elements = 0x600066fe0, 
+  m_twin = 0x600064f70, 
+  m_compare = 0x100401c30 <lesserThan<int>(HeapItem<int>*, HeapItem<int>*)>, 
+  m_size = 69
+}
+this[1] = (99,46)
+this[2] = (95,68)
+this[3] = (97,59)
+this[4] = (91,41)
+this[5] = (89,34)
+this[6] = (77,52)
+this[7] = (89,51)
+this[8] = (91,69)
+this[9] = (72,36)
+this[10] = (75,45)
+this[11] = (74,56)
+this[12] = (64,54)
+this[13] = (63,48)
+this[14] = (85,58)
+this[15] = (73,61)
+this[16] = (78,64)
+this[17] = (82,44)
+this[18] = (44,38)
+this[19] = (56,39)
+this[20] = (64,40)
+this[21] = (70,42)
+this[22] = (72,22)
+this[23] = (54,20)
+this[24] = (58,24)
+this[25] = (60,49)
+this[26] = (49,53)
+this[27] = (54,55)
+this[28] = (45,57)
+this[29] = (71,62)
+this[30] = (71,29)
+this[31] = (58,63)
+this[32] = (41,37)
+this[33] = (32,67)
+this[34] = (81,65)
+this[35] = (71,17)
+this[36] = (8,11)
+this[37] = (38,18)
+this[38] = (24,9)
+this[39] = (36,19)
+this[40] = (12,10)
+this[41] = (47,43)
+this[42] = (1,2)
+this[43] = (16,21)
+this[44] = (20,16)
+this[45] = (29,47)
+this[46] = (4,4)
+this[47] = (14,23)
+this[48] = (7,5)
+this[49] = (29,12)
+this[50] = (20,13)
+this[51] = (43,50)
+this[52] = (37,25)
+this[53] = (15,6)
+this[54] = (39,26)
+this[55] = (49,27)
+this[56] = (8,3)
+this[57] = (33,28)
+this[58] = (11,14)
+this[59] = (46,66)
+this[60] = (17,15)
+this[61] = (70,60)
+this[62] = (45,30)
+this[63] = (42,31)
+this[64] = (0,1)
+this[65] = (8,7)
+this[66] = (23,33)
+this[67] = (5,8)
+this[68] = (40,32)
+this[69] = (75,35)
+
+twin[1] = (99,46)
+twin[2] = (95,68)
+twin[3] = (97,59)
+twin[4] = (91,41)
+twin[5] = (89,34)
+twin[6] = (77,52)
+twin[7] = (89,51)
+twin[8] = (91,69)
+twin[9] = (72,36)
+twin[10] = (75,45)
+twin[11] = (74,56)
+twin[12] = (64,54)
+twin[13] = (63,48)
+twin[14] = (85,58)
+twin[15] = (73,61)
+twin[16] = (78,64)
+twin[17] = (82,44)
+twin[18] = (44,38)
+twin[19] = (56,39)
+twin[20] = (64,40)
+twin[21] = (70,42)
+twin[22] = (72,22)
+twin[23] = (54,20)
+twin[24] = (58,24)
+twin[25] = (60,49)
+twin[26] = (49,53)
+twin[27] = (54,55)
+twin[28] = (45,57)
+twin[29] = (71,62)
+twin[30] = (71,29)
+twin[31] = (58,63)
+twin[32] = (41,37)
+twin[33] = (32,67)
+twin[34] = (81,65)
+twin[35] = (71,17)
+twin[36] = (8,11)
+twin[37] = (38,18)
+twin[38] = (24,9)
+twin[39] = (36,19)
+twin[40] = (12,10)
+twin[41] = (47,43)
+twin[42] = (1,2)
+twin[43] = (16,21)
+twin[44] = (20,16)
+twin[45] = (29,47)
+twin[46] = (4,4)
+twin[47] = (14,23)
+twin[48] = (7,5)
+twin[49] = (29,12)
+twin[50] = (20,13)
+twin[51] = (43,50)
+twin[52] = (37,25)
+twin[53] = (15,6)
+twin[54] = (39,26)
+twin[55] = (49,27)
+twin[56] = (8,3)
+twin[57] = (33,28)
+twin[58] = (11,14)
+twin[59] = (46,66)
+twin[60] = (17,15)
+twin[61] = (70,60)
+twin[62] = (45,30)
+twin[63] = (42,31)
+twin[64] = (0,1)
+twin[65] = (8,7)
+twin[66] = (23,33)
+twin[67] = (5,8)
+twin[68] = (40,32)
+twin[69] = (75,35)
+$9 = {{
+    m_twinIndex = 69, 
+    m_item = 91
+  }, {
+    m_twinIndex = 41, 
+    m_item = 91
+  }}
+this = 0x600064f70
+hi1 = 0x600069320
+hi2 = 0x600069160
+index = 8
+index2 = 4
+hi3 = <optimized out>
+#0  0x0000000100402e27 in MinMaxHeap<int>::Heap::swap (this=this@entry=0x600064f70, hi1=0x600069320, hi2=0x600069160, index=8, index2=4) at MinMaxHeap.cpp:113
+113	    cout << debug_count++ << endl; 
+425
+[New Thread 31676.0x36a0]
+[New Thread 31676.0x6d20]
+[Thread 31676.0x1980 exited with code 1353121792]
+[Thread 31676.0x6d20 exited with code 0]
+[New Thread 31676.0xcd4]
+Hardware watchpoint 1: *0x100404060
+
+Old value = 14513
+New value = 14514
+0x0000000100403286 in MinMaxHeap<int>::locateMin (this=this@entry=0xffffcb60, pos=7, data=@0xffffcaac: 96, index=@0xffffca98: 9) at MinMaxHeap.cpp:262
+262	    cout << debug_count++ << endl;
+$10 = {
+  m_heaps = {0x600066fb0, 0x600064f70}, 
+  m_size = 50, 
+  m_capacity = 1000, 
+  static debug_count = 14514
+}
+this = 0xffffcb60
+pos = 7
+data = @0xffffcaac: 96
+index = @0xffffca98: 9
+No locals.
+#0  0x0000000100403286 in MinMaxHeap<int>::locateMin (this=this@entry=0xffffcb60, pos=7, data=@0xffffcaac: 96, index=@0xffffca98: 9) at MinMaxHeap.cpp:262
+262	    cout << debug_count++ << endl;
+#0  0x0000000100403286 in MinMaxHeap<int>::locateMin (this=this@entry=0xffffcb60, pos=7, data=@0xffffcaac: 96, index=@0xffffca98: 9) at MinMaxHeap.cpp:262
+#1  0x0000000100402215 in sanityCheck<int> (H=...) at p4test04.cpp:84
+#2  0x0000000100401431 in main () at p4test04.cpp:241
+$11 = {
+  m_heaps = {0x600066fb0, 0x600064f70}, 
+  m_size = 50, 
+  m_capacity = 1000, 
+  static debug_count = 14514
+}

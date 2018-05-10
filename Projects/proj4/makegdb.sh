@@ -1,5 +1,9 @@
 if [ -f ./$1.exe ]; then
-	make clean $1 && valgrind -v --track-origins=yes --leak-check=full --show-leak-kinds=all ./$1 < input.txt
+	make clean 
+fi
+make $1
+if [ $2 ]; then
+	valgrind -v --track-origins=yes --leak-check=full --show-leak-kinds=all --vgdb=yes --vgdb-error=0 ./$1 < input.txt & gdb $1 -x "gdb commands.gtxt"
 else
-	make $1 && valgrind -v --track-origins=yes --leak-check=full --show-leak-kinds=all ./$1 < input.txt
+	valgrind -v --track-origins=yes --leak-check=full --show-leak-kinds=all ./$1 < input.txt
 fi

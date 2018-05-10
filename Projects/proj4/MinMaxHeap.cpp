@@ -239,11 +239,13 @@ T MinMaxHeap<T>::Heap::deleteItem(int index) {
 
         if (index == 1) {
             m_size--;
-            m_twin->deleteItem(removedItem->m_twinIndex);
+            if (removedItem->m_twinIndex <= m_twin->m_size)
+                m_twin->deleteItem(removedItem->m_twinIndex);
         }
         T t = removedItem->m_item;
         delete removedItem;
         return t;
+        
     } else
         throw out_of_range("There are no more items in the list");
 }

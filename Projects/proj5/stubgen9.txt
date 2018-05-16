@@ -1,0 +1,133 @@
+==> ChainHashTable.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ChainHashTable.h
+ ** Project: CMSC 341 proj5, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the ChainHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef CHAINHASHTABLE_H
+#define CHAINHASHTABLE_H
+
+#include "HashTable.h"
+#include <list>
+#include <vector>
+
+using namespace std;
+
+template <typename T>
+class ChainHashTable : public HashTable<T> {
+public:
+    // default constructor
+   ChainHashTable(unsigned int (*hashFunc)(const T&), int n=101);
+   
+    // copy constructor
+    ChainHashTable(const ChainHashTable& other);
+
+    // overloaded assignment operator
+    const ChainHashTable& operator=(const ChainHashTable& rhs);
+
+    // destructor
+    virtual ~ChainHashTable();
+
+    // Retreive the number of items stored at the index slot of the hash table
+    int at(int index, vector<T>& contents);
+
+    // Print out the contents of the dump hashtable
+    void dump();
+
+    // Look for data in the hash table
+    bool find(const T& data);
+
+    // Insert data into the hashtable
+    bool insert(const T& data);
+
+    // Remove data from the hashtable if found
+    T remove(const T& data, bool& found);
+
+private:
+    list<T> * m_table;
+};
+
+#endif /* CHAINHASHTABLE_H */
+
+
+==> ChainHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ChainHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ChainHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef CHAINHASHTABLE_CPP
+#define CHAINHASHTABLE_CPP
+
+#include <iostream>
+#include "ChainHashTable.h"
+
+using namespace std;
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Default constructor for ChainHashTable
+ */
+template<typename T>
+ChainHashTable<T>::ChainHashTable(unsigned int(*hashFunc)(const T&), int n) : m_table(new list<T>[n]) {
+    this->hashFunc = hashFunc;
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Copy constructor for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::ChainHashTable(const ChainHashTable<T>& other) {
+}
+
+/*
+ *  Method: ChainHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ChainHashTable
+ */
+template <typename T>
+const ChainHashTable<T> & ChainHashTable<T>::operator=(const ChainHashTable<T> &rhs) {
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Destructor method for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::~ChainHashTable() {
+}
+
+	/*------------------------------------------------------------------------------*/
+
+
+#endif // CHAINHASHTABLE_CPP

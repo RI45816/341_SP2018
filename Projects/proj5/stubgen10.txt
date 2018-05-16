@@ -1,0 +1,348 @@
+==> ChainHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ChainHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ChainHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef CHAINHASHTABLE_CPP
+#define CHAINHASHTABLE_CPP
+
+#include <iostream>
+#include <stdexcept>
+#include "ChainHashTable.h"
+#include "Int341.h"
+
+
+using namespace std;
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Default constructor for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::ChainHashTable(unsigned int(*hashFunc)(const T &data), int n) : m_table(new list<T>[n]), m_length(n), m_size(0) {
+    cout << debug_count++ << endl;
+    this->hashFunc = hashFunc;
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Copy constructor for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::ChainHashTable(const ChainHashTable<T> &other) {
+}
+
+/*
+ *  Method: ChainHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ChainHashTable
+ */
+template <typename T>
+const ChainHashTable<T> & ChainHashTable<T>::operator=(const ChainHashTable<T> &rhs) {
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Destructor method for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::~ChainHashTable() {
+}
+
+	/*------------------------------------------------------------------------------*/
+
+/*
+ *  Method: ChainHashTable::at()
+ *   Descr: Return number of items stored at index
+ */
+template <typename T>
+int ChainHashTable<T>::at(int index, vector<T> &contents)
+{
+    if (index < 0 || index > m_length)
+        throw out_of_range("Invalid index");
+    
+    list<T> bucket = m_table[index];
+    for (typename list<T>::iterator it=bucket.begin();it!=bucket.end();it++)
+        contents.push_back(*it);
+    
+    return bucket.size();
+}
+
+
+/*
+ *  Method: ChainHashTable::dump()
+ *   Descr: Print hashtable to console
+ */
+template <typename T>
+void ChainHashTable<T>::dump() {
+    cout << "ChainHashTable dump; size: " << m_length << " buckets" << endl;
+    for (int i = 0; i < m_length;i++) {
+        cout << "[" << i << "]: ";
+        for (typename list<T>::iterator it = m_table[i].begin(); it != m_table[i].end(); it++)
+            cout << *it << ", ";
+        cout << endl;
+    }
+    cout << "Total items: " << m_size << "" << endl;
+}
+
+
+/*
+ *  Method: ChainHashTable::find()
+ *   Descr: Return true if data is in m_table or false if not
+ */
+template <typename T>
+bool ChainHashTable<T>::find(const T &data) {
+    cout << debug_count++ << endl;
+    list<T> bucket = m_table[this->hashFunc(data) % m_length];
+    for (typename list<T>::iterator it = bucket.begin(); it != bucket.end(); it++)
+        if (data == *it)
+            return true;
+    return false;
+}
+
+
+/*
+ *  Method: ChainHashTable::insert()
+ *   Descr: Return true if item successfully inserted and false if not
+ */
+template <typename T>
+bool ChainHashTable<T>::insert(const T &data)
+{
+    if (find(data))
+        return false;
+    
+    cout << debug_count++ << endl;
+    m_size++;
+    m_table[this->hashFunc(data) % m_length].push_front(data);
+
+    return true;
+}
+
+
+/*
+ *  Method: ChainHashTable::remove()
+ *   Descr: Return the removed item
+ */
+template <typename T>
+T ChainHashTable<T>::remove(const T &data, bool &found) {
+    cout << debug_count++ << endl;
+    
+    
+    T dummy;
+
+    list<T> bucket = m_table[this->hashFunc(data) % m_length];
+    for (typename list<T>::iterator it=bucket.begin();it!=bucket.end();it++) {
+        if (data != *it)
+            continue;
+        
+        found = true;
+        bucket.erase(it);
+        return *it;
+    }
+    
+    found = false;
+    return dummy;
+
+
+
+}
+
+	/*------------------------------------------------------------------------------*/
+
+#endif // CHAINHASHTABLE_CPP
+==> ProbeHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ProbeHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ProbeHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef PROBEHASHTABLE_CPP
+#define PROBEHASHTABLE_CPP
+
+
+#include <iostream>
+#include "ProbeHashTable.h"
+#include <stdexcept>
+
+using namespace std;
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Default constructor for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::ProbeHashTable(unsigned int(*hashFunc)(const T&), int n) : m_table(new HashTableEntry[n]), m_length(n), m_size(0) {
+    this->hashFunc = hashFunc;
+
+}
+ 
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Copy constructor for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::ProbeHashTable(const ProbeHashTable<T>& other) {
+}
+
+/*
+ *  Method: ProbeHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ProbeHashTable
+ */
+template <typename T>
+const ProbeHashTable<T> & ProbeHashTable<T>::operator=(const ProbeHashTable<T> &rhs) {
+}
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Destructor method for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::~ProbeHashTable() {
+}
+
+
+/*
+ *  Method: ProbeHashTable::HashTableEntry::HashTableEntry()
+ *   Descr: 
+ */
+template <typename T>
+ProbeHashTable::HashTableEntry::HashTableEntry(const T &data)
+{
+}
+
+
+/*
+ *  Method: ProbeHashTable::HashTableEntry::HashTableEntry()
+ *   Descr: 
+ */
+template <typename T>
+ProbeHashTable::HashTableEntry::HashTableEntry()
+{
+}
+
+/*
+ *  Method: ProbeHashTable::at()
+ *   Descr: Return number of items stored at index
+ */
+template <typename T>
+int ProbeHashTable<T>::at(int index, vector<T> &contents)
+{
+    int dummy;
+
+    return dummy;
+}
+
+
+/*
+ *  Method: ProbeHashTable::dump()
+ *   Descr: Print hashtable to console
+ */
+template <typename T>
+void ProbeHashTable<T>::dump() {
+    cout << "ProbeHashTable dump; size: " << m_length << " buckets" << endl;
+    for (int i = 0; i < m_length; i++) {
+        cout << "[" << i << "]: ";
+        switch (m_table[i].m_flag) {
+            case DELETED:
+                cout << "DELETED" << endl;
+                break;
+            case EMPTY:
+                cout << "EMPTY" << endl;
+                break;
+            case OCCUPIED:
+                cout << m_table[i].m_data << " (" << this->hashFunc(m_table[i].m_data) << ")" << endl;
+                break;
+        }
+    }
+    cout << "Total items: " << m_size << "" << endl;
+}
+
+
+/*
+ *  Method: ProbeHashTable::find()
+ *   Descr: Return true if data is in m_table or false if not
+ */
+template <typename T>
+bool ProbeHashTable<T>::find(const T &data)
+{
+    bool dummy;
+    
+    
+    return dummy;
+}
+
+
+/*
+ *  Method: ProbeHashTable::insert()
+ *   Descr: Return true if item successfully inserted and false if not
+ */
+template <typename T>
+bool ProbeHashTable<T>::insert(const T &data)
+{
+    if (++m_size == m_length)
+        throw out_of_range("The hashtable is full");
+
+    int index;
+    locate(data,index);
+//    return dummy;
+}
+
+
+/*
+ *  Method: ProbeHashTable::remove()
+ *   Descr: Return the removed item
+ */
+template <typename T>
+T ProbeHashTable<T>::remove(const T &data, bool &found)
+{
+    T dummy;
+
+    return dummy;
+}
+
+/*
+ *  Method: ProbeHashTable::locate()
+ *   Descr: Locate the item and store the index in a variable
+ */
+template<typename T>
+bool ProbeHashTable<T>::locate(const T& data, int& index) {
+    for (int i=index=this->hashFunc(data);m_table[index].m_data != data && m_table[index].m_flag == 1 && index!=i-1;index = ++index % 101)
+    cout << "index: "<< index << "\ni: "<< i << "" << endl;
+}
+
+#endif // PROBEHASHTABLE_CPP	/*------------------------------------------------------------------------------*/
+
+
+
+	/*------------------------------------------------------------------------------*/
+

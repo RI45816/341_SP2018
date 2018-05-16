@@ -1,0 +1,8 @@
+words.o: words.h
+HashTable.o: HashTable.h
+Int341.o: Int341.h
+getCurrentCPU.o: getCurrentCPU.h
+ProbeHashTable.o: ProbeHashTable.h HashTable.h ProbeHashTable.cpp \
+ ProbeHashTable.h
+ChainHashTable.o: ChainHashTable.h HashTable.h ChainHashTable.cpp \
+ ChainHashTable.h Int341.h

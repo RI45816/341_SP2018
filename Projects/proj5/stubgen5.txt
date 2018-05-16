@@ -1,0 +1,119 @@
+==> ChainHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ChainHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ChainHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+#include <iostream>
+#include "ChainHashTable.h"
+
+using namespace std;
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Default constructor for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::ChainHashTable() {
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Copy constructor for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::ChainHashTable(const ChainHashTable<T>& other) {
+}
+
+/*
+ *  Method: ChainHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ChainHashTable
+ */
+template <typename T>
+const ChainHashTable<T> & ChainHashTable<T>::operator=(const ChainHashTable<T> &rhs) {
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Destructor method for ChainHashTable
+ */
+template <typename T>
+ChainHashTable<T>::~ChainHashTable() {
+}
+
+	/*------------------------------------------------------------------------------*/
+
+
+==> ProbeHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ProbeHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ProbeHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+#include <iostream>
+#include "ProbeHashTable.h"
+
+using namespace std;
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Default constructor for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::ProbeHashTable() {
+}
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Copy constructor for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::ProbeHashTable(const ProbeHashTable<T>& other) {
+}
+
+/*
+ *  Method: ProbeHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ProbeHashTable
+ */
+template <typename T>
+const ProbeHashTable<T> & ProbeHashTable<T>::operator=(const ProbeHashTable<T> &rhs) {
+}
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Destructor method for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::~ProbeHashTable() {
+}
+
+	/*------------------------------------------------------------------------------*/
+

@@ -1,0 +1,90 @@
+# target remote | vgdb
+python
+T=list(filter(lambda x: "debug_count" in x,gdb.execute("info variable debug_count",False,True).split()))[-1][:-1]
+if len(T) >= 11 and '"' not in T:
+	cd = (str(gdb.parse_and_eval("&'%s'" % T)).split()[0],)
+end
+
+# target remote
+# b 54
+
+define cn
+set $m = 0
+if $_any_caller_matches(".*Heap.*")
+	ppa 12
+end
+ial
+f
+end
+
+define ppa
+p *this
+set $i = 0
+set $j = m_size
+if $_any_caller_matches(".*::Heap.*")
+	p *m_twin
+	while $i < $j && $argc
+		if m_elements[++$i]
+			# printf "this[%u]: ", $i
+			printf "this[%u] = (%u,%u)\n", $i, m_elements[$i]->m_item, m_elements[$i]->m_twinIndex
+			# p *(m_elements[$i])
+		end
+	end
+	set $i =0
+	set $j =m_twin.m_size
+	printf "\n"
+	while $i < $j && $argc
+		if m_twin.m_elements[++$i]
+			# printf "twin[%u]: ", $i
+			# p *(m_twin.m_elements[$i])
+			printf "twin[%u] = (%u,%u)\n", $i, m_twin.m_elements[$i]->m_item, m_twin.m_elements[$i]->m_twinIndex			
+		end
+	end
+	if $_any_caller_matches(".*(swap|compare).*")
+		if hi1
+			if hi2
+				p {*hi1,*hi2}
+			else
+				p *hi1
+			end
+		else
+			if hi2
+				p *hi2
+			end
+		end
+	end
+end
+end
+
+# dc 1275
+# commands
+# silent
+# d
+# b ChainHashTable<Int341>::remove(Int341 const&, bool&)
+# c
+# end
+
+bf Probe.*find
+
+# log
+
+# b MinMaxHeap.cpp:124
+# python gdb.execute("b MinMaxHeap.cpp:175 if *%s >= 38106" % cd)
+# dc 0
+# dc 7243
+
+b main
+commands
+silent
+# b 322
+# b 188
+# b 232
+# call dup2(open("/dev/null",1), 1)
+# b 230
+call dup2(open("input.txt", 0), 0)
+c
+end
+
+r
+bt
+

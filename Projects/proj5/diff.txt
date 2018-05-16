@@ -1,0 +1,12 @@
+3c3
+< (175 CPU ticks)
+---
+> (8109 CPU ticks)
+8c8
+< (1 CPU ticks)
+---
+> (16 CPU ticks)
+12c12
+< (1 CPU ticks)
+---
+> (31 CPU ticks)

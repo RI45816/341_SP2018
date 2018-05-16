@@ -1,0 +1,228 @@
+==> ChainHashTable.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ChainHashTable.h
+ ** Project: CMSC 341 proj5, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the ChainHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef CHAINHASHTABLE_H
+#define CHAINHASHTABLE_H
+
+class ChainHashTable {
+public:
+    // default constructor
+    ChainHashTable();
+
+    // copy constructor
+    ChainHashTable(const ChainHashTable& other);
+
+    // overloaded assignment operator
+    const ChainHashTable& operator=(const ChainHashTable& rhs);
+
+    // destructor
+    virtual ~ChainHashTable();
+private:
+
+};
+
+#endif /* CHAINHASHTABLE_H */
+
+
+==> HashTable.h <==
+#ifndef HASHTABLE_H
+#define HASHTABLE_H
+
+#include <vector>
+
+template <typename T>
+class HashTable {
+public:
+    virtual ~HashTable() {};
+
+    // Functions in a standard hash table interface,
+    // independent of implementation:
+    virtual bool insert(const T &data) = 0;
+    virtual bool find(const T &data) = 0;
+    virtual T remove(const T &data, bool &found) = 0;
+
+    // Functions for debugging and grading:
+    virtual void dump() = 0;
+    virtual int at(int index, std::vector<T> &contents) = 0;
+
+    // Place to store pointer to hash code generating function
+    unsigned int (*hashFunc)(const T &data);
+
+    // There are no other data members that the different derived classes
+    // would have in common
+};
+
+#endif
+
+==> ProbeHashTable.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ProbeHashTable.h
+ ** Project: CMSC 341 proj5, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the ProbeHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef PROBEHASHTABLE_H
+#define PROBEHASHTABLE_H
+
+#include "HashTable.h"
+
+template <typename T>
+class ProbeHashTable : public HashTable {
+public:
+    // default constructor
+    ProbeHashTable();
+
+    // copy constructor
+    ProbeHashTable(const ProbeHashTable& other);
+
+    // overloaded assignment operator
+    const ProbeHashTable& operator=(const ProbeHashTable& rhs);
+
+    // destructor
+    virtual ~ProbeHashTable();
+private:
+
+};
+
+#endif /* PROBEHASHTABLE_H */
+
+
+==> ChainHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ChainHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ChainHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+#include <iostream>
+#include "ChainHashTable.h"
+
+using namespace std;
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Default constructor for ChainHashTable
+ */
+ChainHashTable::ChainHashTable() {
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Copy constructor for ChainHashTable
+ */
+ChainHashTable::ChainHashTable(const ChainHashTable& other) {
+}
+
+/*
+ *  Method: ChainHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ChainHashTable
+ */
+const ChainHashTable & ChainHashTable::operator=(const ChainHashTable &rhs) {
+}
+
+/*
+ *  Method: ChainHashTable::ChainHashTable()
+ *   Descr: Destructor method for ChainHashTable
+ */
+ChainHashTable::~ChainHashTable() {
+}
+
+
+==> ProbeHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ProbeHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ProbeHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+#include <iostream>
+#include "ProbeHashTable.h"
+
+using namespace std;
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Default constructor for ProbeHashTable
+ */
+ProbeHashTable::ProbeHashTable() {
+}
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Copy constructor for ProbeHashTable
+ */
+ProbeHashTable::ProbeHashTable(const ProbeHashTable& other) {
+}
+
+/*
+ *  Method: ProbeHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ProbeHashTable
+ */
+const ProbeHashTable & ProbeHashTable::operator=(const ProbeHashTable &rhs) {
+}
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Destructor method for ProbeHashTable
+ */
+ProbeHashTable::~ProbeHashTable() {
+}
+

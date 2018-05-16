@@ -1,0 +1,138 @@
+==> ProbeHashTable.h <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ProbeHashTable.h
+ ** Project: CMSC 341 proj5, Spring 2017
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the header for the ProbeHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef PROBEHASHTABLE_H
+#define PROBEHASHTABLE_H
+
+#include "HashTable.h"
+#include <vector>
+
+using namespace std;
+
+template <typename T>
+class ProbeHashTable : public HashTable<T> {
+public:
+    // default constructor
+    ProbeHashTable(unsigned int (*hashFunc)(const T&), int n = 101);
+
+    // copy constructor
+    ProbeHashTable(const ProbeHashTable& other);
+
+    // overloaded assignment operator
+    const ProbeHashTable& operator=(const ProbeHashTable& rhs);
+
+    // destructor
+    ~ProbeHashTable();
+
+
+    // Retreive the number of items stored at the index slot of the hash table
+    int at(int index, vector<T>& contents);
+
+    // Print out the contents of the dump hashtable
+    void dump();
+
+    // Look for data in the hash table
+    bool find(const T& data);
+
+    // Insert data into the hashtable
+    bool insert(const T& data);
+
+    // Remove data from the hashtable if found
+    T remove(const T& data, bool& found);
+
+private:
+
+};
+
+#endif /* PROBEHASHTABLE_H */
+
+
+==> ProbeHashTable.cpp <==
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*****************************************
+ ** File:    ProbeHashTable.cpp
+ ** Project: CMSC 341 proj5, Spring 2018
+ ** Author:  Uzoma Uwanamodo
+ ** Date:    05/11/2018
+ ** E-mail:  uu3@umbc.edu
+ ** 
+ ** This file contains the definition for the ProbeHashTable class.
+ ** 
+ ** 
+ ** 
+ ** 
+ *********************************************/
+
+#ifndef PROBEHASHTABLE_CPP
+#define PROBEHASHTABLE_CPP
+
+
+#include <iostream>
+#include "ProbeHashTable.h"
+#include <stdexcept>
+
+using namespace std;
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Default constructor for ProbeHashTable
+ */
+//template<typename T>
+//ProbeHashTable<T>::ProbeHashTable(unsigned int(*hashFunc)(const T&), int n) {
+//    this->hashFunc = hashFunc;
+//
+//}
+ 
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Copy constructor for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::ProbeHashTable(const ProbeHashTable<T>& other) {
+}
+
+/*
+ *  Method: ProbeHashTable::operator=()
+ *   Descr: Overloaded assignment operator for ProbeHashTable
+ */
+//template <typename T>
+//const ProbeHashTable<T> & ProbeHashTable<T>::operator=(const ProbeHashTable<T> &rhs) {
+//}
+
+/*
+ *  Method: ProbeHashTable::ProbeHashTable()
+ *   Descr: Destructor method for ProbeHashTable
+ */
+template <typename T>
+ProbeHashTable<T>::~ProbeHashTable() {
+}
+
+/*------------------------------------------------------------------------------*/
+
+#endif // PROBEHASHTABLE_CPP	/*------------------------------------------------------------------------------*/
+
+	/*------------------------------------------------------------------------------*/
+

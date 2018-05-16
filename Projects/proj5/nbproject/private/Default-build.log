@@ -1,0 +1,2 @@
+g++ -Og -ggdb -c getCurrentCPU.cpp 
+g++ -Og -ggdb -c Int341.cpp 

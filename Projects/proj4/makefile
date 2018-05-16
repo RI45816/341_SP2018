@@ -1,5 +1,5 @@
 # EXE = $${PWD\#\#*/}
-TEST = $(patsubst %.cpp, %, $(wildcard *testXX.cpp))
+TEST = $(patsubst %.cpp, %, $(wildcard *testXX.cpp)) Driver
 EXE = $(patsubst %.cpp, %, $(filter-out $(TEST:=.cpp),$(wildcard p[0-9]*.cpp)))
 
 GDBFLAGS = -O2 -ggdb
@@ -34,15 +34,13 @@ $(EXE): %: %.cpp $(OBJS)
 	$(CXX) $(CXXFLAGS) $(filter-out $<,$(OBJS:.o=.cpp)) $< -o $@
 	
 $(TEST): %: %.cpp $(OBJS)
-	$(CXX) $(CXXFLAGS) $(filter-out $<,$(OBJS:.o=.cpp)) $< -o $@
+	$(CXX) $(CXXFLAGS) $(filter-out $(patsubst %.cpp,%.o,$<),$(OBJS)) $< -o $@
 
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< 
 	
 
-%: %.cpp $(OBJS)
-	$(CXX) $(CXXFLAGS) $(filter-out $<,$(OBJS:.o=.cpp)) $< -o $%
 
 clean:
 	rm -f $(EXE) $(TEST) $(OBJS) $(wildcard *.stackdump) $(wildcard *.exe)
@@ -50,15 +48,15 @@ clean:
 	# rm *~ 
 
 run(%): %.cpp $(OBJS)
-	$(CXX) $(CXXFLAGS) $(filter-out $<,$(OBJS:.o=.cpp)) $< -o $%
+	$(CXX) $(CXXFLAGS) $(filter-out $(patsubst %.cpp,%.o,$<),$(OBJS)) $< -o $%
 	./$% < input.txt > output.txt
 	
 gdb(%): %.cpp $(OBJS) 
-	$(CXX) $(CXXFLAGS) $(filter-out $<,$(OBJS:.o=.cpp)) $< -o $%
+	$(CXX) $(CXXFLAGS) $(filter-out $(patsubst %.cpp,%.o,$<),$(OBJS)) $< -o $%
 	./$@.bat $% 	
 
 gdb2(%): %.cpp $(OBJS) 
-	$(CXX) $(GDBFLAGS) $(filter-out $<,$(OBJS:.o=.cpp)) $< -o $%
+	$(CXX) $(GDBFLAGS) $(filter-out $(patsubst %.cpp,%.o,$<),$(OBJS)) $< -o $%
 	./gdb.bat $% 	
 
 diff(%): %.txt run(%)
@@ -76,4 +74,5 @@ depend: .depend
 	$(CC) $(CXXFLAGS) -MM $^ > ./.depend;
 	
 include .depend
+
 
